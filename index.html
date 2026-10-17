@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alphasonic  Solutions. | Digital Advisory for Small Businesses</title>
+<link rel="icon" type="image/png" href="mainlogo.png">
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Newsreader (Editorial Serif) & Inter (Sans) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration matching Visual Identity & Design System Tokens -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary-container": "#984300",
+            "on-secondary-fixed-variant": "#3c475a",
+            "inverse-surface": "#33302d",
+            "accent-royal": "#1d4ed8",
+            "on-tertiary-fixed-variant": "#763300",
+            "tertiary-fixed": "#ffdbca",
+            "on-secondary": "#ffffff",
+            "on-background": "#1e1b19",
+            "on-surface-variant": "#434655",
+            "text-muted": "#645e57",
+            "primary-fixed": "#dce1ff",
+            "on-error-container": "#93000a",
+            "accent-royal-hover": "#1e40af",
+            "surface-dim": "#e0d8d5",
+            "error-container": "#ffdad6",
+            "on-error": "#ffffff",
+            "on-primary-container": "#cad3ff",
+            "border-hairline": "#e7e2d9",
+            "surface-container": "#f4ece8",
+            "surface-bright": "#fff8f5",
+            "surface-container-highest": "#e9e1dd",
+            "secondary-container": "#d5e0f8",
+            "secondary-fixed-dim": "#bcc7de",
+            "surface": "#fff8f5",
+            "surface-container-lowest": "#ffffff",
+            "outline-variant": "#c4c5d7",
+            "surface-container-low": "#faf2ee",
+            "background": "#fff8f5",
+            "primary-container": "#1d4ed8",
+            "surface-tint": "#2151da",
+            "tertiary": "#733100",
+            "on-secondary-container": "#586377",
+            "surface-cream": "#fcfaf7",
+            "inverse-primary": "#b7c4ff",
+            "primary": "#0037b0",
+            "on-secondary-fixed": "#111c2d",
+            "secondary-fixed": "#d8e3fb",
+            "on-tertiary": "#ffffff",
+            "inverse-on-surface": "#f7efeb",
+            "surface-container-high": "#eee7e3",
+            "outline": "#747686",
+            "on-primary": "#ffffff",
+            "tertiary-fixed-dim": "#ffb68e",
+            "accent-royal-subtle": "#eff4ff",
+            "on-tertiary-fixed": "#331200",
+            "text-obsidian": "#1c1917",
+            "secondary": "#545f73",
+            "on-primary-fixed": "#001551",
+            "on-primary-fixed-variant": "#0039b5",
+            "surface-variant": "#e9e1dd",
+            "primary-fixed-dim": "#b7c4ff",
+            "on-tertiary-container": "#ffcaae",
+            "on-surface": "#1e1b19",
+            "error": "#ba1a1a",
+            "surface-subtle": "#f5f2eb"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-2xs": "0.25rem",
+            "space-xs": "0.5rem",
+            "space-sm": "0.75rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2rem",
+            "space-2xl": "3rem",
+            "space-3xl": "4rem",
+            "space-4xl": "6rem",
+            "space-5xl": "8rem",
+            "gutter-mobile": "1rem",
+            "gutter-desktop": "2rem",
+            "container-max": "84rem"
+          },
+          "fontFamily": {
+            "body-lg": ["Inter"],
+            "headline-sm": ["Newsreader"],
+            "title-lg": ["Inter"],
+            "headline-lg": ["Newsreader"],
+            "headline-md": ["Newsreader"],
+            "headline-lg-mobile": ["Newsreader"],
+            "title-md": ["Inter"],
+            "label-md": ["Inter"],
+            "body-sm": ["Inter"],
+            "body-md": ["Inter"],
+            "display-lg-mobile": ["Newsreader"],
+            "label-sm": ["Inter"],
+            "display-lg": ["Newsreader"]
+          },
+          "fontSize": {
+            "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "0", "fontWeight": "400" }],
+            "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "title-lg": ["1.125rem", { "lineHeight": "1.625rem", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "headline-md": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "title-md": ["1rem", { "lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "500" }],
+            "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "body-sm": ["0.8125rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "body-md": ["0.9375rem", { "lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "400" }],
+            "display-lg-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.06em", "fontWeight": "500" }],
+            "display-lg": ["3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.025em", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+  
+</head>
+<body class="bg-surface-cream text-text-obsidian font-body-md text-body-md antialiased min-h-screen flex flex-col selection:bg-accent-royal selection:text-white">
+<!-- TOP APP BAR / SHARED COMPONENT 1: TopNavBar -->
+<header class="docked full-width top-0 sticky z-50 bg-surface-cream dark:bg-inverse-surface border-b border-border-hairline dark:border-outline-variant">
+<div class="flex justify-between items-center w-full px-space-xl max-w-container-max mx-auto h-20">
+<!-- Brand Logo / Product Anchor -->
+<a class="flex items-center gap-space-xs group" href="#">
+<img alt="Aegis Digital Advisory Seal" class="w-10 h-10 object-contain transition-transform duration-200 group-hover:scale-105" src="mainlogo.png"/>
+<span class="font-headline-sm text-headline-sm text-text-obsidian dark:text-inverse-on-surface font-medium tracking-tight">
+          Alphasonic Solution.
+        </span>
+</a>
+<!-- Desktop Navigation Cluster: Exact labels from JSON ("Solutions", "Client Outcomes", "Philosophy", "Advisory") -->
+<nav class="hidden md:flex items-center gap-space-xl">
+<a class="text-text-muted dark:text-outline-variant font-medium hover:text-accent-royal dark:hover:text-accent-royal-subtle transition-colors duration-150" href="#solutions">
+          Solutions
+        </a>
+<a class="text-text-muted dark:text-outline-variant font-medium hover:text-accent-royal dark:hover:text-accent-royal-subtle transition-colors duration-150" href="#outcomes">
+          Client Outcomes
+        </a>
+<a class="text-text-muted dark:text-outline-variant font-medium hover:text-accent-royal dark:hover:text-accent-royal-subtle transition-colors duration-150" href="#philosophy">
+          Philosophy
+        </a>
+<a class="text-accent-royal dark:text-accent-royal-subtle font-semibold border-b-2 border-accent-royal dark:border-accent-royal-subtle pb-1" href="#advisory">
+          Advisory
+        </a>
+</nav>
+<!-- Trailing Action Buttons from JSON Blueprint -->
+<div class="flex items-center gap-space-sm">
+
+<a class="bg-accent-royal hover:bg-accent-royal-hover active:bg-primary text-white font-title-md text-title-md px-5 py-2.5 rounded-lg transition-all duration-150 shadow-sm flex items-center gap-1.5" href="#contact">
+<span>Connect With Us</span>
+<span class="material-symbols-outlined text-[1.125rem]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<!-- MAIN CANVAS -->
+<main class="flex-1 w-full">
+<!-- HERO SECTION -->
+<section class="relative pt-space-3xl pb-space-4xl px-space-xl border-b border-border-hairline overflow-hidden">
+<!-- Subtle Ambient Texture Grid -->
+<div class="absolute inset-0 bg-[linear-gradient(to_right,#e7e2d9_1px,transparent_1px),linear-gradient(to_bottom,#e7e2d9_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-30 pointer-events-none"></div>
+<div class="max-w-container-max mx-auto relative z-10">
+<div class="max-w-4xl mx-auto text-center space-y-space-lg">
+<!-- Trust Badge / Sub-heading Tag -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accent-royal-subtle border border-[#bfdbfe] text-accent-royal">
+<span class="material-symbols-outlined text-[1rem]" data-icon="verified">verified</span>
+<span class="font-label-md text-label-md tracking-wider">ENDURING DIGITAL STRATEGY FOR INDEPENDENT ENTERPRISE</span>
+</div>
+<!-- Primary Headline (Newsreader Editorial) -->
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-text-obsidian tracking-tight">
+            Turn Local Strength into <span class="italic font-normal">Digital Growth.</span>
+</h1>
+<!-- Purposeful Subheading -->
+<p class="font-body-lg text-body-lg text-text-muted max-w-2xl mx-auto leading-relaxed">
+            Practical, jargon-free digital solutions tailored for independent brands, generational service providers, and local retailers ready to thrive without losing their soul.
+          </p>
+<!-- Dual Call-to-Actions -->
+<div class="pt-space-sm flex flex-col sm:flex-row items-center justify-center gap-space-md">
+<a class="w-full sm:w-auto bg-accent-royal hover:bg-accent-royal-hover text-white font-title-md text-title-md px-8 py-3.5 rounded-lg transition-all duration-150 text-center flex items-center justify-center gap-2" href="#contact">
+<span>Connect With Us</span>
+<span class="material-symbols-outlined text-[1.125rem]" data-icon="north_east">north_east</span>
+</a>
+<a class="w-full sm:w-auto bg-white hover:bg-surface-subtle text-text-obsidian border border-border-hairline font-title-md text-title-md px-8 py-3.5 rounded-lg transition-all duration-150 text-center" href="#solutions">
+              Explore Solutions
+            </a>
+</div>
+<!-- Trust Highlights / Proof Chips -->
+<div class="pt-space-2xl grid grid-cols-1 md:grid-cols-3 gap-space-md border-t border-border-hairline/80 max-w-3xl mx-auto text-left">
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-subtle/60 border border-border-hairline">
+<span class="material-symbols-outlined text-accent-royal text-[1.5rem]" data-icon="store">store</span>
+<div>
+<p class="font-title-lg text-title-lg text-text-obsidian">150+ Businesses</p>
+<p class="font-body-sm text-body-sm text-text-muted">Modernized &amp; Transformed</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-subtle/60 border border-border-hairline">
+<span class="material-symbols-outlined text-accent-royal text-[1.5rem]" data-icon="trending_up">trending_up</span>
+<div>
+<p class="font-title-lg text-title-lg text-text-obsidian">+64% Digital Revenue</p>
+<p class="font-body-sm text-body-sm text-text-muted">Documented 12-mo average</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-subtle/60 border border-border-hairline">
+<span class="material-symbols-outlined text-accent-royal text-[1.5rem]" data-icon="forum">forum</span>
+<div>
+<p class="font-title-lg text-title-lg text-text-obsidian">Zero Tech Jargon</p>
+<p class="font-body-sm text-body-sm text-text-muted">Plain English advisory</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CORE DIGITAL SERVICES (BENTO GRID PATTERN) -->
+<section class="py-space-4xl px-space-xl max-w-container-max mx-auto" id="solutions">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-3xl pb-space-lg border-b border-border-hairline">
+<div>
+<span class="font-label-md text-label-md text-accent-royal tracking-widest block mb-2">PRACTICAL DISCIPLINES</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-text-obsidian">
+            Core Solutions Tailored for Independent Enterprise
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-text-muted max-w-md mt-4 md:mt-0">
+          We don’t pitch bloated enterprise software packages you’ll never use. We engineer targeted systems that solve daily headaches and bring in high-value local customers.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg">
+<!-- Bento Card 1: Modern Web & E-Commerce (Span 7) -->
+<div class="md:col-span-7 bg-white p-space-2xl rounded-lg border border-border-hairline flex flex-col justify-between group hover:border-accent-royal/40 transition-colors duration-200">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-lg bg-surface-subtle flex items-center justify-center text-accent-royal">
+<span class="material-symbols-outlined text-[1.75rem]" data-icon="desktop_windows">desktop_windows</span>
+</div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-subtle border border-border-hairline font-label-sm text-label-sm text-text-muted">
+              CONVERSION FOCUSED
+            </span>
+<h3 class="font-headline-md text-headline-md text-text-obsidian">
+              Modern Web &amp; Frictionless E-Commerce
+            </h3>
+<p class="font-body-md text-body-md text-text-muted leading-relaxed">
+              Lightning-fast digital storefronts and boutique web experiences that present your craft with elegance. Built for seamless mobile checkout, customer trust badges, and lightning-fast load times.
+            </p>
+</div>
+<div class="mt-space-xl pt-space-md border-t border-border-hairline flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-muted">Includes: Mobile Optimization, Shopify/WooCommerce, Stripe integration</span>
+<span class="material-symbols-outlined text-accent-royal group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Bento Card 2: Local Search & Visibility (Span 5) -->
+<div class="md:col-span-5 bg-white p-space-2xl rounded-lg border border-border-hairline flex flex-col justify-between group hover:border-accent-royal/40 transition-colors duration-200">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-lg bg-surface-subtle flex items-center justify-center text-accent-royal">
+<span class="material-symbols-outlined text-[1.75rem]" data-icon="map">map</span>
+</div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-accent-royal-subtle border border-[#bfdbfe] font-label-sm text-label-sm text-accent-royal">
+              LOCAL ACCELERATION
+            </span>
+<h3 class="font-headline-md text-headline-md text-text-obsidian">
+              Local Search &amp; Map Visibility
+            </h3>
+<p class="font-body-md text-body-md text-text-muted leading-relaxed">
+              Dominate your immediate geographic radius. Turn your Google Business Profile into an automated inquiry engine with automated review prompts and high-intent local SEO tags.
+            </p>
+</div>
+<div class="mt-space-xl pt-space-md border-t border-border-hairline flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-muted">Google 3-Pack Optimization &amp; Review Engines</span>
+<span class="material-symbols-outlined text-accent-royal group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Bento Card 3: Automation & Operations (Span 5) -->
+<div class="md:col-span-5 bg-white p-space-2xl rounded-lg border border-border-hairline flex flex-col justify-between group hover:border-accent-royal/40 transition-colors duration-200">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-lg bg-surface-subtle flex items-center justify-center text-accent-royal">
+<span class="material-symbols-outlined text-[1.75rem]" data-icon="sync_saved_locally">sync_saved_locally</span>
+</div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-[#fef3c7] border border-[#fde68a] font-label-sm text-label-sm text-[#b45309]">
+              WORKFLOW RESCUE
+            </span>
+<h3 class="font-headline-md text-headline-md text-text-obsidian">
+              Automation &amp; Operations
+            </h3>
+<p class="font-body-md text-body-md text-text-muted leading-relaxed">
+              Stop juggling paper receipts and missed voicemails. We install unified scheduling, automated customer SMS reminders, frictionless digital invoicing, and organized CRM pipelines.
+            </p>
+</div>
+<div class="mt-space-xl pt-space-md border-t border-border-hairline flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-muted">Zero manual double-entry, instant client notifications</span>
+<span class="material-symbols-outlined text-accent-royal group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Bento Card 4: Social & Digital Reach (Span 7) -->
+<div class="md:col-span-7 bg-white p-space-2xl rounded-lg border border-border-hairline flex flex-col justify-between group hover:border-accent-royal/40 transition-colors duration-200">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-lg bg-surface-subtle flex items-center justify-center text-accent-royal">
+<span class="material-symbols-outlined text-[1.75rem]" data-icon="campaign">campaign</span>
+</div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-subtle border border-border-hairline font-label-sm text-label-sm text-text-muted">
+              RETENTION &amp; ACQUISITION
+            </span>
+<h3 class="font-headline-md text-headline-md text-text-obsidian">
+              Social &amp; Digital Reach Loops
+            </h3>
+<p class="font-body-md text-body-md text-text-muted leading-relaxed">
+              Laser-focused geo-targeted advertising campaigns designed for actual return on spend. We establish continuous re-engagement programs that bring back past clients and turn neighborhood patrons into vocal advocates.
+            </p>
+</div>
+<div class="mt-space-xl pt-space-md border-t border-border-hairline flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-muted">Includes: Hyper-local Meta Ads, Email Newsletters, Customer VIP loops</span>
+<span class="material-symbols-outlined text-accent-royal group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CLIENT OUTCOMES / TANGIBLE EDITORIAL STORIES -->
+<section class="py-space-4xl px-space-xl bg-surface-subtle/50 border-y border-border-hairline" id="outcomes">
+<div class="max-w-container-max mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-space-3xl">
+<span class="font-label-md text-label-md text-accent-royal tracking-widest block mb-2">TANGIBLE PROOF</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-text-obsidian">
+            Generational Craft Meets Modern Execution
+          </h2>
+<p class="font-body-md text-body-md text-text-muted mt-2">
+            Real figures from independent businesses who trusted Aegis &amp; Co. to guide their digital pivot.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-xl">
+<!-- Case Study 1: Artisanal Bakery -->
+<div class="bg-white rounded-lg border border-border-hairline overflow-hidden flex flex-col">
+<div class="p-space-xl border-b border-border-hairline bg-surface-cream">
+<span class="font-label-sm text-label-sm text-text-muted block mb-1">RETAIL &amp; FOOD CRAFT</span>
+<h3 class="font-headline-sm text-headline-sm text-text-obsidian">Oakhaven Heritage Bakery</h3>
+<p class="font-body-sm text-body-sm text-text-muted">32-year-old family sourdough institution</p>
+</div>
+<div class="p-space-xl flex-1 flex flex-col justify-between space-y-space-lg">
+<div class="space-y-3">
+<div class="text-accent-royal font-headline-lg text-headline-lg font-medium">3.2x</div>
+<p class="font-title-md text-title-md text-text-obsidian">Online Pre-order Volume</p>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+                  Shifted 60% of morning weekend pastry demand to pre-paid digital reservations, completely eliminating line abandonment and surplus ingredient waste.
+                </p>
+</div>
+<div class="pt-space-md border-t border-border-hairline flex items-center gap-2 text-text-muted font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[1.125rem] text-accent-royal" data-icon="check_circle">check_circle</span>
+<span>Custom Shopify + Local Pickup Flow</span>
+</div>
+</div>
+</div>
+<!-- Case Study 2: Family Plumbing Service -->
+<div class="bg-white rounded-lg border border-border-hairline overflow-hidden flex flex-col">
+<div class="p-space-xl border-b border-border-hairline bg-surface-cream">
+<span class="font-label-sm text-label-sm text-text-muted block mb-1">FIELD TRADES &amp; CONTRACTING</span>
+<h3 class="font-headline-sm text-headline-sm text-text-obsidian">Pemberton &amp; Sons Mechanical</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Residential heating and plumbing services</p>
+</div>
+<div class="p-space-xl flex-1 flex flex-col justify-between space-y-space-lg">
+<div class="space-y-3">
+<div class="text-accent-royal font-headline-lg text-headline-lg font-medium">+180%</div>
+<p class="font-title-md text-title-md text-text-obsidian">Automated Service Bookings</p>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+                  Replaced phone-tag voicemails with live calendar dispatch, SMS follow-up alerts, and automated customer review requests within two hours of job completion.
+                </p>
+</div>
+<div class="pt-space-md border-t border-border-hairline flex items-center gap-2 text-text-muted font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-accent-royal text-[1.125rem]" data-icon="check_circle">check_circle</span>
+<span>4.9★ Local Rating Across 240+ Reviews</span>
+</div>
+</div>
+</div>
+<!-- Case Study 3: Boutique Fitness Studio -->
+<div class="bg-white rounded-lg border border-border-hairline overflow-hidden flex flex-col">
+<div class="p-space-xl border-b border-border-hairline bg-surface-cream">
+<span class="font-label-sm text-label-sm text-text-muted block mb-1">HEALTH &amp; WELLNESS</span>
+<h3 class="font-headline-sm text-headline-sm text-text-obsidian">The Movement Loft</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Independent neighborhood pilates collective</p>
+</div>
+<div class="p-space-xl flex-1 flex flex-col justify-between space-y-space-lg">
+<div class="space-y-3">
+<div class="text-accent-royal font-headline-lg text-headline-lg font-medium">+84%</div>
+<p class="font-title-md text-title-md text-text-obsidian">Recurring Member Retention</p>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+                  Introduced a high-touch class waitlist system and branded digital membership gateway that drove recurring subscription commitments without added receptionist overhead.
+                </p>
+</div>
+<div class="pt-space-md border-t border-border-hairline flex items-center gap-2 text-text-muted font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-accent-royal text-[1.125rem]" data-icon="check_circle">check_circle</span>
+<span>Frictionless recurring Stripe billing</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PHILOSOPHY / WHY CHOOSE US -->
+<section class="py-space-4xl px-space-xl max-w-container-max mx-auto" id="philosophy">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<div class="lg:col-span-5 space-y-space-lg">
+<span class="font-label-md text-label-md text-accent-royal tracking-widest block">OUR PHILOSOPHY</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-text-obsidian leading-tight">
+            Practical. Human.<br/><span class="italic">Measurable.</span>
+</h2>
+<p class="font-body-lg text-body-lg text-text-muted leading-relaxed">
+            Most digital agencies speak in buzzwords to justify inflated retainers. At Aegis &amp; Co., we operate as your trusted in-house advisory desk. We don’t rest until your phones are ringing and your digital balance sheet is undeniably healthy.
+          </p>
+<div class="p-space-lg rounded-lg bg-surface-subtle border-l-4 border-accent-royal">
+<p class="font-headline-sm text-headline-sm italic text-text-obsidian">
+              “We build enduring digital assets that you fully own—never hostage systems you can’t operate without us.”
+            </p>
+<p class="font-label-sm text-label-sm text-text-muted mt-2">— The Aegis Advisory Promise</p>
+</div>
+</div>
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-space-lg">
+<!-- Pillar 1 -->
+<div class="p-space-xl bg-white rounded-lg border border-border-hairline space-y-3">
+<span class="material-symbols-outlined text-accent-royal text-[2rem]" data-icon="handshake">handshake</span>
+<h3 class="font-title-lg text-title-lg text-text-obsidian">No Corporate Red Tape</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+              Work directly with seasoned senior directors who understand unit economics, inventory, and payroll pressures.
+            </p>
+</div>
+<!-- Pillar 2 -->
+<div class="p-space-xl bg-white rounded-lg border border-border-hairline space-y-3">
+<span class="material-symbols-outlined text-accent-royal text-[2rem]" data-icon="psychology">psychology</span>
+<h3 class="font-title-lg text-title-lg text-text-obsidian">Dedicated Digital Partner</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+              We treat your business with the care of a family partner, safeguarding your brand reputation in every customer touchpoint.
+            </p>
+</div>
+<!-- Pillar 3 -->
+<div class="p-space-xl bg-white rounded-lg border border-border-hairline space-y-3">
+<span class="material-symbols-outlined text-accent-royal text-[2rem]" data-icon="straighten">straighten</span>
+<h3 class="font-title-lg text-title-lg text-text-obsidian">Hands-on Implementation</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+              We don’t just drop a 40-page strategy PDF and walk away. We build, configure, connect the cables, and train your staff.
+            </p>
+</div>
+<!-- Pillar 4 -->
+<div class="p-space-xl bg-white rounded-lg border border-border-hairline space-y-3">
+<span class="material-symbols-outlined text-accent-royal text-[2rem]" data-icon="payments">payments</span>
+<h3 class="font-title-lg text-title-lg text-text-obsidian">Clear, Fair Economics</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+              Fixed milestones, zero hidden licensing markups, and transparent roadmaps built for reasonable small business budgets.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- PROMINENT INTAKE SECTION / CONNECT WITH US -->
+<section class="py-space-5xl px-space-xl bg-white border-t border-border-hairline" id="contact">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-3xl items-start">
+<!-- Contextual Left Column -->
+<div class="lg:col-span-5 space-y-space-lg">
+<span class="font-label-md text-label-md text-accent-royal tracking-widest block">START THE DIALOGUE</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-text-obsidian">
+              Let's Talk About Your Business.
+            </h2>
+<p class="font-body-lg text-body-lg text-text-muted leading-relaxed">
+              Whether you're starting from scratch or ready to modernize your existing setup, tell us a bit about where you want to go. No pressure, no obligations—just honest, practical advice.
+            </p>
+<div class="pt-space-md space-y-space-md border-t border-border-hairline">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-royal text-[1.25rem] mt-0.5" data-icon="mail">mail</span>
+<div>
+<p class="font-title-md text-title-md text-text-obsidian">Direct Inquiries</p>
+<a class="font-body-md text-body-md text-accent-royal hover:underline" href="mailto:ceo@alphasonicsoltuion.com">
+                    ceo@alphasonicsoltuion.com
+                  </a>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-royal text-[1.25rem] mt-0.5" data-icon="call">call</span>
+<div>
+<p class="font-title-md text-title-md text-text-obsidian">Direct Consultation Line</p>
+<p class="font-body-md text-body-md text-text-muted">+91 70213 54835 (Mon–Fri, 9am–5pm IST)</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-royal text-[1.25rem] mt-0.5" data-icon="schedule">schedule</span>
+<div>
+<p class="font-title-md text-title-md text-text-obsidian">Guaranteed Response</p>
+<p class="font-body-md text-body-md text-text-muted">Every inquiry is reviewed by a partner within 24 business hours.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Clean Modern Form (Right Column) -->
+<div class="lg:col-span-7 bg-surface-cream p-space-2xl rounded-lg border border-border-hairline shadow-sm">
+<form class="space-y-space-md" id="advisory-intake" onsubmit="event.preventDefault(); alert('Thank you. A senior partner will review your inquiry within 24 hours.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Business Name -->
+<div>
+<label class="block font-title-md text-title-md text-text-obsidian mb-1.5" for="biz-name">
+                    Business Name <span class="text-accent-royal">*</span>
+</label>
+<input class="w-full bg-white border border-border-hairline rounded-lg px-3.5 py-2.5 text-body-md text-text-obsidian focus:outline-none focus:border-accent-royal focus:ring-2 focus:ring-accent-royal/10 transition-colors" id="biz-name" placeholder="e.g., Summit Auto Restoration" required="" type="text"/>
+</div>
+<!-- Contact Person -->
+<div>
+<label class="block font-title-md text-title-md text-text-obsidian mb-1.5" for="contact-person">
+                    Contact Person <span class="text-accent-royal">*</span>
+</label>
+<input class="w-full bg-white border border-border-hairline rounded-lg px-3.5 py-2.5 text-body-md text-text-obsidian focus:outline-none focus:border-accent-royal focus:ring-2 focus:ring-accent-royal/10 transition-colors" id="contact-person" placeholder="Your full name" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Email -->
+<div>
+<label class="block font-title-md text-title-md text-text-obsidian mb-1.5" for="email-address">
+                    Email Address <span class="text-accent-royal">*</span>
+</label>
+<input class="w-full bg-white border border-border-hairline rounded-lg px-3.5 py-2.5 text-body-md text-text-obsidian focus:outline-none focus:border-accent-royal focus:ring-2 focus:ring-accent-royal/10 transition-colors" id="email-address" placeholder="name@business.com" required="" type="email"/>
+</div>
+<!-- Phone -->
+<div>
+<label class="block font-title-md text-title-md text-text-obsidian mb-1.5" for="phone-number">
+                    Phone / Mobile
+                  </label>
+<input class="w-full bg-white border border-border-hairline rounded-lg px-3.5 py-2.5 text-body-md text-text-obsidian focus:outline-none focus:border-accent-royal focus:ring-2 focus:ring-accent-royal/10 transition-colors" id="phone-number" placeholder="(555) 000-0000" type="tel"/>
+</div>
+</div>
+<!-- Current Challenge / Goal Dropdown -->
+<div>
+<label class="block font-title-md text-title-md text-text-obsidian mb-1.5" for="primary-goal">
+                  Current Challenge / Immediate Goal <span class="text-accent-royal">*</span>
+</label>
+<select class="w-full bg-white border border-border-hairline rounded-lg px-3.5 py-2.5 text-body-md text-text-obsidian focus:outline-none focus:border-accent-royal focus:ring-2 focus:ring-accent-royal/10 transition-colors" id="primary-goal" required="">
+<option disabled="" selected="" value="">Select what matters most right now</option>
+<option value="website">Launch a New Website or Storefront</option>
+<option value="local">Get More Local Customers &amp; Foot Traffic</option>
+<option value="automation">Automate Daily Tasks &amp; Appointment Booking</option>
+<option value="full">Full Digital Upgrade &amp; Strategic Advisory</option>
+</select>
+</div>
+<!-- Message Box -->
+<div>
+<label class="block font-title-md text-title-md text-text-obsidian mb-1.5" for="notes">
+                  Briefly Describe Your Business &amp; Goals
+                </label>
+<textarea class="w-full bg-white border border-border-hairline rounded-lg px-3.5 py-2.5 text-body-md text-text-obsidian focus:outline-none focus:border-accent-royal focus:ring-2 focus:ring-accent-royal/10 transition-colors resize-none" id="notes" placeholder="Tell us a bit about your current operations, what is frustrating you today, and what a win looks like over the next 6 months..." rows="4"></textarea>
+</div>
+<!-- Submit Button -->
+<div class="pt-space-xs">
+<button class="w-full bg-accent-royal hover:bg-accent-royal-hover active:bg-primary text-white font-title-lg text-title-lg py-3.5 px-6 rounded-lg transition-all duration-150 shadow-sm flex items-center justify-center gap-2" type="submit">
+<span>Send Message &amp; Connect</span>
+<span class="material-symbols-outlined text-[1.25rem]" data-icon="send">send</span>
+</button>
+<p class="font-body-sm text-body-sm text-text-muted text-center mt-2.5">
+                  Your privacy is respected. No spam, sales cadences, or outsourced cold callers.
+                </p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- SHARED COMPONENT 2: Footer -->
+<footer class="docked full-width bottom bg-surface-cream dark:bg-inverse-surface border-t border-border-hairline dark:border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-space-xl py-space-xl max-w-container-max mx-auto gap-space-md">
+<!-- Copyright & Advisory Creed from JSON -->
+<div class="text-center md:text-left">
+<p class="font-body-sm text-body-sm text-text-muted dark:text-outline-variant">
+          © 2026 Alphasonic Solution. Digital Advisory. Guiding small businesses with enduring care.
+        </p>
+</div>
+
+</div>
+</footer>
+</body></html>
