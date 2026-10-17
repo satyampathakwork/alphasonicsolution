@@ -1,586 +1,1303 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alphasonic Solution | Websites, Local SEO &amp; Smart Automations</title>
+  <meta name="description" content="Alphasonic Solution helps independent businesses and local enterprises grow with fast websites, Google Maps domination, and smart business automations." />
+  <link rel="icon" type="image/png" href="mainlogo.png" />
 
-<html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Alphasonic  Solutions. | Digital Advisory for Small Businesses</title>
-<link rel="icon" type="image/png" href="mainlogo.png">
-<!-- Material Symbols Outlined -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Google Fonts: Newsreader (Editorial Serif) & Inter (Sans) -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind CSS CDN -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<!-- Tailwind Configuration matching Visual Identity & Design System Tokens -->
-<script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          "colors": {
-            "tertiary-container": "#984300",
-            "on-secondary-fixed-variant": "#3c475a",
-            "inverse-surface": "#33302d",
-            "accent-royal": "#1d4ed8",
-            "on-tertiary-fixed-variant": "#763300",
-            "tertiary-fixed": "#ffdbca",
-            "on-secondary": "#ffffff",
-            "on-background": "#1e1b19",
-            "on-surface-variant": "#434655",
-            "text-muted": "#645e57",
-            "primary-fixed": "#dce1ff",
-            "on-error-container": "#93000a",
-            "accent-royal-hover": "#1e40af",
-            "surface-dim": "#e0d8d5",
-            "error-container": "#ffdad6",
-            "on-error": "#ffffff",
-            "on-primary-container": "#cad3ff",
-            "border-hairline": "#e7e2d9",
-            "surface-container": "#f4ece8",
-            "surface-bright": "#fff8f5",
-            "surface-container-highest": "#e9e1dd",
-            "secondary-container": "#d5e0f8",
-            "secondary-fixed-dim": "#bcc7de",
-            "surface": "#fff8f5",
-            "surface-container-lowest": "#ffffff",
-            "outline-variant": "#c4c5d7",
-            "surface-container-low": "#faf2ee",
-            "background": "#fff8f5",
-            "primary-container": "#1d4ed8",
-            "surface-tint": "#2151da",
-            "tertiary": "#733100",
-            "on-secondary-container": "#586377",
-            "surface-cream": "#fcfaf7",
-            "inverse-primary": "#b7c4ff",
-            "primary": "#0037b0",
-            "on-secondary-fixed": "#111c2d",
-            "secondary-fixed": "#d8e3fb",
-            "on-tertiary": "#ffffff",
-            "inverse-on-surface": "#f7efeb",
-            "surface-container-high": "#eee7e3",
-            "outline": "#747686",
-            "on-primary": "#ffffff",
-            "tertiary-fixed-dim": "#ffb68e",
-            "accent-royal-subtle": "#eff4ff",
-            "on-tertiary-fixed": "#331200",
-            "text-obsidian": "#1c1917",
-            "secondary": "#545f73",
-            "on-primary-fixed": "#001551",
-            "on-primary-fixed-variant": "#0039b5",
-            "surface-variant": "#e9e1dd",
-            "primary-fixed-dim": "#b7c4ff",
-            "on-tertiary-container": "#ffcaae",
-            "on-surface": "#1e1b19",
-            "error": "#ba1a1a",
-            "surface-subtle": "#f5f2eb"
-          },
-          "borderRadius": {
-            "DEFAULT": "0.125rem",
-            "lg": "0.25rem",
-            "xl": "0.5rem",
-            "full": "0.75rem"
-          },
-          "spacing": {
-            "space-2xs": "0.25rem",
-            "space-xs": "0.5rem",
-            "space-sm": "0.75rem",
-            "space-md": "1rem",
-            "space-lg": "1.5rem",
-            "space-xl": "2rem",
-            "space-2xl": "3rem",
-            "space-3xl": "4rem",
-            "space-4xl": "6rem",
-            "space-5xl": "8rem",
-            "gutter-mobile": "1rem",
-            "gutter-desktop": "2rem",
-            "container-max": "84rem"
-          },
-          "fontFamily": {
-            "body-lg": ["Inter"],
-            "headline-sm": ["Newsreader"],
-            "title-lg": ["Inter"],
-            "headline-lg": ["Newsreader"],
-            "headline-md": ["Newsreader"],
-            "headline-lg-mobile": ["Newsreader"],
-            "title-md": ["Inter"],
-            "label-md": ["Inter"],
-            "body-sm": ["Inter"],
-            "body-md": ["Inter"],
-            "display-lg-mobile": ["Newsreader"],
-            "label-sm": ["Inter"],
-            "display-lg": ["Newsreader"]
-          },
-          "fontSize": {
-            "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "0", "fontWeight": "400" }],
-            "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "500" }],
-            "title-lg": ["1.125rem", { "lineHeight": "1.625rem", "letterSpacing": "-0.01em", "fontWeight": "600" }],
-            "headline-lg": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "400" }],
-            "headline-md": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "400" }],
-            "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "400" }],
-            "title-md": ["1rem", { "lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "500" }],
-            "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.08em", "fontWeight": "600" }],
-            "body-sm": ["0.8125rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "400" }],
-            "body-md": ["0.9375rem", { "lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "400" }],
-            "display-lg-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "400" }],
-            "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.06em", "fontWeight": "500" }],
-            "display-lg": ["3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.025em", "fontWeight": "400" }]
-          }
-        }
-      }
-    }
-  </script>
-  
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Neo-Tactile Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="bg-surface-cream text-text-obsidian font-body-md text-body-md antialiased min-h-screen flex flex-col selection:bg-accent-royal selection:text-white">
-<!-- TOP APP BAR / SHARED COMPONENT 1: TopNavBar -->
-<header class="docked full-width top-0 sticky z-50 bg-surface-cream dark:bg-inverse-surface border-b border-border-hairline dark:border-outline-variant">
-<div class="flex justify-between items-center w-full px-space-xl max-w-container-max mx-auto h-20">
-<!-- Brand Logo / Product Anchor -->
-<a class="flex items-center gap-space-xs group" href="#">
-<img alt="Aegis Digital Advisory Seal" class="w-10 h-10 object-contain transition-transform duration-200 group-hover:scale-105" src="mainlogo.png"/>
-<span class="font-headline-sm text-headline-sm text-text-obsidian dark:text-inverse-on-surface font-medium tracking-tight">
-          Alphasonic Solution.
-        </span>
-</a>
-<!-- Desktop Navigation Cluster: Exact labels from JSON ("Solutions", "Client Outcomes", "Philosophy", "Advisory") -->
-<nav class="hidden md:flex items-center gap-space-xl">
-<a class="text-text-muted dark:text-outline-variant font-medium hover:text-accent-royal dark:hover:text-accent-royal-subtle transition-colors duration-150" href="#solutions">
-          Solutions
-        </a>
-<a class="text-text-muted dark:text-outline-variant font-medium hover:text-accent-royal dark:hover:text-accent-royal-subtle transition-colors duration-150" href="#outcomes">
-          Client Outcomes
-        </a>
-<a class="text-text-muted dark:text-outline-variant font-medium hover:text-accent-royal dark:hover:text-accent-royal-subtle transition-colors duration-150" href="#philosophy">
-          Philosophy
-        </a>
-<a class="text-accent-royal dark:text-accent-royal-subtle font-semibold border-b-2 border-accent-royal dark:border-accent-royal-subtle pb-1" href="#advisory">
-          Advisory
-        </a>
-</nav>
-<!-- Trailing Action Buttons from JSON Blueprint -->
-<div class="flex items-center gap-space-sm">
+<body>
 
-<a class="bg-accent-royal hover:bg-accent-royal-hover active:bg-primary text-white font-title-md text-title-md px-5 py-2.5 rounded-lg transition-all duration-150 shadow-sm flex items-center gap-1.5" href="#contact">
-<span>Connect With Us</span>
-<span class="material-symbols-outlined text-[1.125rem]" data-icon="arrow_forward">arrow_forward</span>
-</a>
-</div>
-</div>
-</header>
-<!-- MAIN CANVAS -->
-<main class="flex-1 w-full">
-<!-- HERO SECTION -->
-<section class="relative pt-space-3xl pb-space-4xl px-space-xl border-b border-border-hairline overflow-hidden">
-<!-- Subtle Ambient Texture Grid -->
-<div class="absolute inset-0 bg-[linear-gradient(to_right,#e7e2d9_1px,transparent_1px),linear-gradient(to_bottom,#e7e2d9_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-30 pointer-events-none"></div>
-<div class="max-w-container-max mx-auto relative z-10">
-<div class="max-w-4xl mx-auto text-center space-y-space-lg">
-<!-- Trust Badge / Sub-heading Tag -->
-<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accent-royal-subtle border border-[#bfdbfe] text-accent-royal">
-<span class="material-symbols-outlined text-[1rem]" data-icon="verified">verified</span>
-<span class="font-label-md text-label-md tracking-wider">ENDURING DIGITAL STRATEGY FOR INDEPENDENT ENTERPRISE</span>
-</div>
-<!-- Primary Headline (Newsreader Editorial) -->
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-text-obsidian tracking-tight">
-            Turn Local Strength into <span class="italic font-normal">Digital Growth.</span>
-</h1>
-<!-- Purposeful Subheading -->
-<p class="font-body-lg text-body-lg text-text-muted max-w-2xl mx-auto leading-relaxed">
-            Practical, jargon-free digital solutions tailored for independent brands, generational service providers, and local retailers ready to thrive without losing their soul.
-          </p>
-<!-- Dual Call-to-Actions -->
-<div class="pt-space-sm flex flex-col sm:flex-row items-center justify-center gap-space-md">
-<a class="w-full sm:w-auto bg-accent-royal hover:bg-accent-royal-hover text-white font-title-md text-title-md px-8 py-3.5 rounded-lg transition-all duration-150 text-center flex items-center justify-center gap-2" href="#contact">
-<span>Connect With Us</span>
-<span class="material-symbols-outlined text-[1.125rem]" data-icon="north_east">north_east</span>
-</a>
-<a class="w-full sm:w-auto bg-white hover:bg-surface-subtle text-text-obsidian border border-border-hairline font-title-md text-title-md px-8 py-3.5 rounded-lg transition-all duration-150 text-center" href="#solutions">
-              Explore Solutions
+  <!-- Subtle Blueprint Architectural Grid Background (Zero Dark Slop) -->
+  <div class="blueprint-grid-bg"></div>
+
+  <!-- Confetti Canvas for Celebratory Dopamine Moments -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- ========================================================================
+       TOP NAVIGATION BAR
+       ======================================================================== -->
+  <div class="navbar-wrapper">
+    <nav class="navbar" id="main-nav">
+      <!-- Brand Logo -->
+      <a class="nav-brand" href="#hero" aria-label="Alphasonic Solution Home">
+        <img src="mainlogo.png" alt="Alphasonic Solution Logo" class="brand-logo-img" />
+        <span class="brand-title">Alphasonic<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-menu" id="nav-links">
+        <li><a class="nav-link" href="#services">Services</a></li>
+        <li><a class="nav-link" href="#configurator">Builder</a></li>
+        <li><a class="nav-link" href="#comparison">Why Us</a></li>
+        <li><a class="nav-link" href="#calculator">ROI Calculator</a></li>
+        <li><a class="nav-link" href="#outcomes">Results</a></li>
+        <li><a class="nav-link" href="#faq">FAQ</a></li>
+        <li class="mobile-sound-li">
+          <button class="sound-toggle-btn mobile-drawer-sound" id="sound-toggle-mobile" title="Toggle satisfying mechanical click sound effects">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <line x1="23" y1="9" x2="17" y2="15"></line>
+              <line x1="17" y1="9" x2="23" y2="15"></line>
+            </svg>
+            <span>Sound: OFF</span>
+          </button>
+        </li>
+      </ul>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <!-- Mechanical Sound Feedback Toggle (Desktop) -->
+        <button class="sound-toggle-btn desktop-sound-btn" id="sound-toggle" title="Toggle satisfying mechanical click sound effects">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <line x1="23" y1="9" x2="17" y2="15"></line>
+            <line x1="17" y1="9" x2="23" y2="15"></line>
+          </svg>
+          <span>Sound: OFF</span>
+        </button>
+
+        <a class="btn btn-primary trigger-confetti" href="#contact">
+          <span>Get Free Audit</span>
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" aria-label="Open Navigation Menu">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ========================================================================
+       HERO SECTION (High-Contrast, Crisp White, Tactile Cards)
+       ======================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <!-- Status Badge -->
+      <div class="badge-pill badge-yellow" style="margin-bottom: 24px;">
+        <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #059669;"></span>
+        <span>ACCEPTING NEW CLIENTS FOR Q2 &amp; Q3</span>
+      </div>
+
+      <!-- Main Headline with Clean Highlighter Effect -->
+      <h1 class="hero-title">
+        High-Converting Websites, Local SEO &amp; Automations <br class="desktop-only" />
+        That <span class="text-highlight">Actually Bring You Customers.</span>
+      </h1>
+
+      <!-- Plain English Subheading -->
+      <p class="hero-subtitle">
+        We help retail stores, contractors, clinics, and independent businesses turn website visitors into paid clients. Zero confusing tech buzzwords. Zero bloated agency fees. Just practical digital systems that you 100% own.
+      </p>
+
+      <!-- Dual Call to Action Buttons -->
+      <div class="hero-actions">
+        <a class="btn btn-primary trigger-confetti" href="#contact">
+          <span>Claim Your Free Growth Plan</span>
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+        <a class="btn btn-secondary" href="#configurator">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="3" y1="9" x2="21" y2="9"></line>
+            <line x1="9" y1="21" x2="9" y2="9"></line>
+          </svg>
+          <span>Try Interactive Blueprint Builder</span>
+        </a>
+      </div>
+
+      <!-- Tactile Proof Cards Row -->
+      <div class="hero-proof-grid">
+        <div class="proof-card">
+          <div class="proof-icon-box">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </div>
+          <div>
+            <div class="proof-number" data-counter-target="150" data-counter-suffix="+">150+</div>
+            <div class="proof-label">Businesses Modernized &amp; Scaled</div>
+          </div>
+        </div>
+
+        <div class="proof-card">
+          <div class="proof-icon-box" style="background: #ecfdf5; color: #059669;">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+              <polyline points="17 6 23 6 23 12"></polyline>
+            </svg>
+          </div>
+          <div>
+            <div class="proof-number" data-counter-target="64" data-counter-prefix="+" data-counter-suffix="%">+64%</div>
+            <div class="proof-label">Average Online Revenue Spike</div>
+          </div>
+        </div>
+
+        <div class="proof-card">
+          <div class="proof-icon-box" style="background: #fefce8; color: #d97706;">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <div>
+            <div class="proof-number" data-counter-target="4.9" data-counter-suffix=" ★">4.9 ★</div>
+            <div class="proof-label">Client Satisfaction Rating</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       TACTILE MARQUEE BANNER
+       ======================================================================== -->
+  <div class="marquee-bar">
+    <div class="marquee-content">
+      <div class="marquee-badge"><span class="marquee-dot"></span><span>Local Retail Stores</span></div>
+      <div class="marquee-badge"><span class="marquee-dot"></span><span>Contractors &amp; Home Trades</span></div>
+      <div class="marquee-badge"><span class="marquee-dot"></span><span>Clinics &amp; Medical Practices</span></div>
+      <div class="marquee-badge"><span class="marquee-dot"></span><span>Bakeries, Cafés &amp; Dining</span></div>
+      <div class="marquee-badge"><span class="marquee-dot"></span><span>Lawyers &amp; Professional Firms</span></div>
+      <div class="marquee-badge"><span class="marquee-dot"></span><span>Boutique Fitness Studios</span></div>
+      <!-- Duplicate for infinite ticker -->
+      <div class="marquee-badge"><span class="marquee-dot"></span><span>Local Retail Stores</span></div>
+      <div class="marquee-badge"><span class="marquee-dot"></span><span>Contractors &amp; Home Trades</span></div>
+      <div class="marquee-badge"><span class="marquee-dot"></span><span>Clinics &amp; Medical Practices</span></div>
+      <div class="marquee-badge"><span class="marquee-dot"></span><span>Bakeries, Cafés &amp; Dining</span></div>
+      <div class="marquee-badge"><span class="marquee-dot"></span><span>Lawyers &amp; Professional Firms</span></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       INTERACTIVE BLUEPRINT CONFIGURATOR (DOPAMINE MECHANICAL FEEL!)
+       ======================================================================== -->
+  <section class="section-porcelain" id="configurator">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill badge-blue section-tag">INTERACTIVE BUILDER</div>
+        <h2 class="section-title">Configure Your Custom <span class="text-highlight-blue">Growth Blueprint</span></h2>
+        <p class="section-desc">
+          Click the modules your business needs below. Watch your custom project timeline and expected revenue impact calculate instantly in real time!
+        </p>
+      </div>
+
+      <div class="configurator-wrapper">
+        <!-- Module Selector (Left) -->
+        <div class="configurator-left">
+          <h3>1. Select What You Need:</h3>
+          <p style="font-size: 0.92rem; color: var(--ink-muted);">Click to toggle components. Your estimated timeline and impact update live.</p>
+
+          <div class="config-options-list">
+            <!-- Option 1 -->
+            <button class="config-option-btn selected" data-days="6" data-boost="45">
+              <div class="config-checkbox-icon">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div>
+                <div class="config-option-title">High-Converting Website</div>
+                <div class="config-option-subtitle">Under 1s load speed + mobile checkout</div>
+              </div>
+            </button>
+
+            <!-- Option 2 -->
+            <button class="config-option-btn selected" data-days="3" data-boost="50">
+              <div class="config-checkbox-icon">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div>
+                <div class="config-option-title">Google Maps #1 Domination</div>
+                <div class="config-option-subtitle">Top 3-Pack ranking for nearby clients</div>
+              </div>
+            </button>
+
+            <!-- Option 3 -->
+            <button class="config-option-btn selected" data-days="3" data-boost="30">
+              <div class="config-checkbox-icon">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div>
+                <div class="config-option-title">WhatsApp &amp; SMS Booking Bot</div>
+                <div class="config-option-subtitle">24/7 automated appointment alerts</div>
+              </div>
+            </button>
+
+            <!-- Option 4 -->
+            <button class="config-option-btn" data-days="2" data-boost="25">
+              <div class="config-checkbox-icon"></div>
+              <div>
+                <div class="config-option-title">Automated Review Engine</div>
+                <div class="config-option-subtitle">Collect 5-star Google reviews via SMS</div>
+              </div>
+            </button>
+
+            <!-- Option 5 -->
+            <button class="config-option-btn" data-days="3" data-boost="40">
+              <div class="config-checkbox-icon"></div>
+              <div>
+                <div class="config-option-title">Local Geo-Targeted Ads</div>
+                <div class="config-option-subtitle">Meta &amp; Google ads for nearby zip codes</div>
+              </div>
+            </button>
+
+            <!-- Option 6 -->
+            <button class="config-option-btn" data-days="5" data-boost="35">
+              <div class="config-checkbox-icon"></div>
+              <div>
+                <div class="config-option-title">Custom Client Portal</div>
+                <div class="config-option-subtitle">Secure dashboard &amp; digital invoicing</div>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Live Blueprint Output (Right) -->
+        <div class="config-summary-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="config-summary-header">YOUR ESTIMATED BLUEPRINT</span>
+              <span class="badge-pill badge-yellow" id="config-selected-count">3 Selected</span>
+            </div>
+
+            <div class="config-stats-row">
+              <div>
+                <div class="config-stat-num" id="config-stat-days">12 Days</div>
+                <div class="config-stat-label">Estimated Launch Schedule</div>
+              </div>
+              <div>
+                <div class="config-stat-num" style="color: var(--pop-emerald);" id="config-stat-leads">+125%</div>
+                <div class="config-stat-label">Projected Lead Velocity</div>
+              </div>
+            </div>
+
+            <div style="font-size: 0.9rem; color: var(--ink-dark); line-height: 1.55; margin-bottom: 24px;">
+              ✅ <strong>Guaranteed:</strong> 100% full asset ownership, zero ongoing maintenance hostages, and personal 1-on-1 staff training upon launch.
+            </div>
+          </div>
+
+          <button class="btn btn-primary" id="config-apply-btn" style="width: 100%;">
+            <span>Lock In This Blueprint</span>
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SERVICES SHOWCASE (PLAIN ENGLISH & TECH TABS)
+       ======================================================================== -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill badge-blue section-tag">OUR CORE SOLUTIONS</div>
+        <h2 class="section-title">Clear Services Designed to <span class="text-highlight">Solve Real Headaches</span></h2>
+        <p class="section-desc">
+          We don't pitch bloated enterprise software packages you’ll never use. We engineer targeted systems that solve daily headaches and bring in high-paying customers.
+        </p>
+      </div>
+
+      <!-- Mode Switcher: Simple English vs Under The Hood -->
+      <div class="service-mode-switch-wrapper">
+        <div class="mode-switch-box">
+          <button class="mode-switch-btn active" id="mode-plain-btn">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+            </svg>
+            <span>Simple English (For Everyone)</span>
+          </button>
+          <button class="mode-switch-btn" id="mode-tech-btn">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            <span>Under The Hood (Tech Stack)</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 6 Service Cards Grid -->
+      <div class="services-grid">
+
+        <!-- Card 1: Modern Websites -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <div class="service-icon-box">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">High-Converting Websites &amp; E-Commerce</h3>
+            <p class="service-plain-desc">
+              A gorgeous, lightning-fast digital storefront that makes visitors trust you instantly and buy with ease. Built for seamless mobile browsing and one-tap checkout.
+            </p>
+
+            <ul class="service-feature-list">
+              <li class="service-feature-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Loads in under 1 second on mobile phones</span>
+              </li>
+              <li class="service-feature-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Integrated Stripe, Apple Pay &amp; credit card payments</span>
+              </li>
+              <li class="service-feature-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>You own 100% of code, domain, and data</span>
+              </li>
+            </ul>
+
+            <!-- Tech Spec Box -->
+            <div class="tech-spec-box">
+              <div style="font-weight: 700; margin-bottom: 4px;">// ARCHITECTURE</div>
+              <div>Static Site Generation (SSG), Next.js / Astro, Edge CDN caching, Core Web Vitals < 0.8s, Stripe Elements SDK.</div>
+              <div class="tech-tag-list">
+                <span class="tech-pill">Next.js</span>
+                <span class="tech-pill">Tailwind</span>
+                <span class="tech-pill">Stripe API</span>
+                <span class="tech-pill">Lighthouse 98+</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card-footer">
+            <span class="service-stat-tag">+3.2x Order Velocity</span>
+            <a class="service-link" href="#contact">
+              <span>Learn More</span>
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </a>
-</div>
-<!-- Trust Highlights / Proof Chips -->
-<div class="pt-space-2xl grid grid-cols-1 md:grid-cols-3 gap-space-md border-t border-border-hairline/80 max-w-3xl mx-auto text-left">
-<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-subtle/60 border border-border-hairline">
-<span class="material-symbols-outlined text-accent-royal text-[1.5rem]" data-icon="store">store</span>
-<div>
-<p class="font-title-lg text-title-lg text-text-obsidian">150+ Businesses</p>
-<p class="font-body-sm text-body-sm text-text-muted">Modernized &amp; Transformed</p>
-</div>
-</div>
-<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-subtle/60 border border-border-hairline">
-<span class="material-symbols-outlined text-accent-royal text-[1.5rem]" data-icon="trending_up">trending_up</span>
-<div>
-<p class="font-title-lg text-title-lg text-text-obsidian">+64% Digital Revenue</p>
-<p class="font-body-sm text-body-sm text-text-muted">Documented 12-mo average</p>
-</div>
-</div>
-<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-subtle/60 border border-border-hairline">
-<span class="material-symbols-outlined text-accent-royal text-[1.5rem]" data-icon="forum">forum</span>
-<div>
-<p class="font-title-lg text-title-lg text-text-obsidian">Zero Tech Jargon</p>
-<p class="font-body-sm text-body-sm text-text-muted">Plain English advisory</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- CORE DIGITAL SERVICES (BENTO GRID PATTERN) -->
-<section class="py-space-4xl px-space-xl max-w-container-max mx-auto" id="solutions">
-<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-3xl pb-space-lg border-b border-border-hairline">
-<div>
-<span class="font-label-md text-label-md text-accent-royal tracking-widest block mb-2">PRACTICAL DISCIPLINES</span>
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-text-obsidian">
-            Core Solutions Tailored for Independent Enterprise
-          </h2>
-</div>
-<p class="font-body-md text-body-md text-text-muted max-w-md mt-4 md:mt-0">
-          We don’t pitch bloated enterprise software packages you’ll never use. We engineer targeted systems that solve daily headaches and bring in high-value local customers.
-        </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg">
-<!-- Bento Card 1: Modern Web & E-Commerce (Span 7) -->
-<div class="md:col-span-7 bg-white p-space-2xl rounded-lg border border-border-hairline flex flex-col justify-between group hover:border-accent-royal/40 transition-colors duration-200">
-<div class="space-y-4">
-<div class="w-12 h-12 rounded-lg bg-surface-subtle flex items-center justify-center text-accent-royal">
-<span class="material-symbols-outlined text-[1.75rem]" data-icon="desktop_windows">desktop_windows</span>
-</div>
-<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-subtle border border-border-hairline font-label-sm text-label-sm text-text-muted">
-              CONVERSION FOCUSED
-            </span>
-<h3 class="font-headline-md text-headline-md text-text-obsidian">
-              Modern Web &amp; Frictionless E-Commerce
-            </h3>
-<p class="font-body-md text-body-md text-text-muted leading-relaxed">
-              Lightning-fast digital storefronts and boutique web experiences that present your craft with elegance. Built for seamless mobile checkout, customer trust badges, and lightning-fast load times.
-            </p>
-</div>
-<div class="mt-space-xl pt-space-md border-t border-border-hairline flex items-center justify-between">
-<span class="font-label-sm text-label-sm text-text-muted">Includes: Mobile Optimization, Shopify/WooCommerce, Stripe integration</span>
-<span class="material-symbols-outlined text-accent-royal group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
-</div>
-</div>
-<!-- Bento Card 2: Local Search & Visibility (Span 5) -->
-<div class="md:col-span-5 bg-white p-space-2xl rounded-lg border border-border-hairline flex flex-col justify-between group hover:border-accent-royal/40 transition-colors duration-200">
-<div class="space-y-4">
-<div class="w-12 h-12 rounded-lg bg-surface-subtle flex items-center justify-center text-accent-royal">
-<span class="material-symbols-outlined text-[1.75rem]" data-icon="map">map</span>
-</div>
-<span class="inline-block px-2.5 py-0.5 rounded-full bg-accent-royal-subtle border border-[#bfdbfe] font-label-sm text-label-sm text-accent-royal">
-              LOCAL ACCELERATION
-            </span>
-<h3 class="font-headline-md text-headline-md text-text-obsidian">
-              Local Search &amp; Map Visibility
-            </h3>
-<p class="font-body-md text-body-md text-text-muted leading-relaxed">
-              Dominate your immediate geographic radius. Turn your Google Business Profile into an automated inquiry engine with automated review prompts and high-intent local SEO tags.
-            </p>
-</div>
-<div class="mt-space-xl pt-space-md border-t border-border-hairline flex items-center justify-between">
-<span class="font-label-sm text-label-sm text-text-muted">Google 3-Pack Optimization &amp; Review Engines</span>
-<span class="material-symbols-outlined text-accent-royal group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
-</div>
-</div>
-<!-- Bento Card 3: Automation & Operations (Span 5) -->
-<div class="md:col-span-5 bg-white p-space-2xl rounded-lg border border-border-hairline flex flex-col justify-between group hover:border-accent-royal/40 transition-colors duration-200">
-<div class="space-y-4">
-<div class="w-12 h-12 rounded-lg bg-surface-subtle flex items-center justify-center text-accent-royal">
-<span class="material-symbols-outlined text-[1.75rem]" data-icon="sync_saved_locally">sync_saved_locally</span>
-</div>
-<span class="inline-block px-2.5 py-0.5 rounded-full bg-[#fef3c7] border border-[#fde68a] font-label-sm text-label-sm text-[#b45309]">
-              WORKFLOW RESCUE
-            </span>
-<h3 class="font-headline-md text-headline-md text-text-obsidian">
-              Automation &amp; Operations
-            </h3>
-<p class="font-body-md text-body-md text-text-muted leading-relaxed">
-              Stop juggling paper receipts and missed voicemails. We install unified scheduling, automated customer SMS reminders, frictionless digital invoicing, and organized CRM pipelines.
-            </p>
-</div>
-<div class="mt-space-xl pt-space-md border-t border-border-hairline flex items-center justify-between">
-<span class="font-label-sm text-label-sm text-text-muted">Zero manual double-entry, instant client notifications</span>
-<span class="material-symbols-outlined text-accent-royal group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
-</div>
-</div>
-<!-- Bento Card 4: Social & Digital Reach (Span 7) -->
-<div class="md:col-span-7 bg-white p-space-2xl rounded-lg border border-border-hairline flex flex-col justify-between group hover:border-accent-royal/40 transition-colors duration-200">
-<div class="space-y-4">
-<div class="w-12 h-12 rounded-lg bg-surface-subtle flex items-center justify-center text-accent-royal">
-<span class="material-symbols-outlined text-[1.75rem]" data-icon="campaign">campaign</span>
-</div>
-<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-subtle border border-border-hairline font-label-sm text-label-sm text-text-muted">
-              RETENTION &amp; ACQUISITION
-            </span>
-<h3 class="font-headline-md text-headline-md text-text-obsidian">
-              Social &amp; Digital Reach Loops
-            </h3>
-<p class="font-body-md text-body-md text-text-muted leading-relaxed">
-              Laser-focused geo-targeted advertising campaigns designed for actual return on spend. We establish continuous re-engagement programs that bring back past clients and turn neighborhood patrons into vocal advocates.
-            </p>
-</div>
-<div class="mt-space-xl pt-space-md border-t border-border-hairline flex items-center justify-between">
-<span class="font-label-sm text-label-sm text-text-muted">Includes: Hyper-local Meta Ads, Email Newsletters, Customer VIP loops</span>
-<span class="material-symbols-outlined text-accent-royal group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
-</div>
-</div>
-</div>
-</section>
-<!-- CLIENT OUTCOMES / TANGIBLE EDITORIAL STORIES -->
-<section class="py-space-4xl px-space-xl bg-surface-subtle/50 border-y border-border-hairline" id="outcomes">
-<div class="max-w-container-max mx-auto">
-<div class="text-center max-w-2xl mx-auto mb-space-3xl">
-<span class="font-label-md text-label-md text-accent-royal tracking-widest block mb-2">TANGIBLE PROOF</span>
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-text-obsidian">
-            Generational Craft Meets Modern Execution
-          </h2>
-<p class="font-body-md text-body-md text-text-muted mt-2">
-            Real figures from independent businesses who trusted Aegis &amp; Co. to guide their digital pivot.
-          </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-space-xl">
-<!-- Case Study 1: Artisanal Bakery -->
-<div class="bg-white rounded-lg border border-border-hairline overflow-hidden flex flex-col">
-<div class="p-space-xl border-b border-border-hairline bg-surface-cream">
-<span class="font-label-sm text-label-sm text-text-muted block mb-1">RETAIL &amp; FOOD CRAFT</span>
-<h3 class="font-headline-sm text-headline-sm text-text-obsidian">Oakhaven Heritage Bakery</h3>
-<p class="font-body-sm text-body-sm text-text-muted">32-year-old family sourdough institution</p>
-</div>
-<div class="p-space-xl flex-1 flex flex-col justify-between space-y-space-lg">
-<div class="space-y-3">
-<div class="text-accent-royal font-headline-lg text-headline-lg font-medium">3.2x</div>
-<p class="font-title-md text-title-md text-text-obsidian">Online Pre-order Volume</p>
-<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
-                  Shifted 60% of morning weekend pastry demand to pre-paid digital reservations, completely eliminating line abandonment and surplus ingredient waste.
-                </p>
-</div>
-<div class="pt-space-md border-t border-border-hairline flex items-center gap-2 text-text-muted font-body-sm text-body-sm">
-<span class="material-symbols-outlined text-[1.125rem] text-accent-royal" data-icon="check_circle">check_circle</span>
-<span>Custom Shopify + Local Pickup Flow</span>
-</div>
-</div>
-</div>
-<!-- Case Study 2: Family Plumbing Service -->
-<div class="bg-white rounded-lg border border-border-hairline overflow-hidden flex flex-col">
-<div class="p-space-xl border-b border-border-hairline bg-surface-cream">
-<span class="font-label-sm text-label-sm text-text-muted block mb-1">FIELD TRADES &amp; CONTRACTING</span>
-<h3 class="font-headline-sm text-headline-sm text-text-obsidian">Pemberton &amp; Sons Mechanical</h3>
-<p class="font-body-sm text-body-sm text-text-muted">Residential heating and plumbing services</p>
-</div>
-<div class="p-space-xl flex-1 flex flex-col justify-between space-y-space-lg">
-<div class="space-y-3">
-<div class="text-accent-royal font-headline-lg text-headline-lg font-medium">+180%</div>
-<p class="font-title-md text-title-md text-text-obsidian">Automated Service Bookings</p>
-<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
-                  Replaced phone-tag voicemails with live calendar dispatch, SMS follow-up alerts, and automated customer review requests within two hours of job completion.
-                </p>
-</div>
-<div class="pt-space-md border-t border-border-hairline flex items-center gap-2 text-text-muted font-body-sm text-body-sm">
-<span class="material-symbols-outlined text-accent-royal text-[1.125rem]" data-icon="check_circle">check_circle</span>
-<span>4.9★ Local Rating Across 240+ Reviews</span>
-</div>
-</div>
-</div>
-<!-- Case Study 3: Boutique Fitness Studio -->
-<div class="bg-white rounded-lg border border-border-hairline overflow-hidden flex flex-col">
-<div class="p-space-xl border-b border-border-hairline bg-surface-cream">
-<span class="font-label-sm text-label-sm text-text-muted block mb-1">HEALTH &amp; WELLNESS</span>
-<h3 class="font-headline-sm text-headline-sm text-text-obsidian">The Movement Loft</h3>
-<p class="font-body-sm text-body-sm text-text-muted">Independent neighborhood pilates collective</p>
-</div>
-<div class="p-space-xl flex-1 flex flex-col justify-between space-y-space-lg">
-<div class="space-y-3">
-<div class="text-accent-royal font-headline-lg text-headline-lg font-medium">+84%</div>
-<p class="font-title-md text-title-md text-text-obsidian">Recurring Member Retention</p>
-<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
-                  Introduced a high-touch class waitlist system and branded digital membership gateway that drove recurring subscription commitments without added receptionist overhead.
-                </p>
-</div>
-<div class="pt-space-md border-t border-border-hairline flex items-center gap-2 text-text-muted font-body-sm text-body-sm">
-<span class="material-symbols-outlined text-accent-royal text-[1.125rem]" data-icon="check_circle">check_circle</span>
-<span>Frictionless recurring Stripe billing</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- PHILOSOPHY / WHY CHOOSE US -->
-<section class="py-space-4xl px-space-xl max-w-container-max mx-auto" id="philosophy">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
-<div class="lg:col-span-5 space-y-space-lg">
-<span class="font-label-md text-label-md text-accent-royal tracking-widest block">OUR PHILOSOPHY</span>
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-text-obsidian leading-tight">
-            Practical. Human.<br/><span class="italic">Measurable.</span>
-</h2>
-<p class="font-body-lg text-body-lg text-text-muted leading-relaxed">
-            Most digital agencies speak in buzzwords to justify inflated retainers. At Aegis &amp; Co., we operate as your trusted in-house advisory desk. We don’t rest until your phones are ringing and your digital balance sheet is undeniably healthy.
-          </p>
-<div class="p-space-lg rounded-lg bg-surface-subtle border-l-4 border-accent-royal">
-<p class="font-headline-sm text-headline-sm italic text-text-obsidian">
-              “We build enduring digital assets that you fully own—never hostage systems you can’t operate without us.”
-            </p>
-<p class="font-label-sm text-label-sm text-text-muted mt-2">— The Aegis Advisory Promise</p>
-</div>
-</div>
-<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-space-lg">
-<!-- Pillar 1 -->
-<div class="p-space-xl bg-white rounded-lg border border-border-hairline space-y-3">
-<span class="material-symbols-outlined text-accent-royal text-[2rem]" data-icon="handshake">handshake</span>
-<h3 class="font-title-lg text-title-lg text-text-obsidian">No Corporate Red Tape</h3>
-<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
-              Work directly with seasoned senior directors who understand unit economics, inventory, and payroll pressures.
-            </p>
-</div>
-<!-- Pillar 2 -->
-<div class="p-space-xl bg-white rounded-lg border border-border-hairline space-y-3">
-<span class="material-symbols-outlined text-accent-royal text-[2rem]" data-icon="psychology">psychology</span>
-<h3 class="font-title-lg text-title-lg text-text-obsidian">Dedicated Digital Partner</h3>
-<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
-              We treat your business with the care of a family partner, safeguarding your brand reputation in every customer touchpoint.
-            </p>
-</div>
-<!-- Pillar 3 -->
-<div class="p-space-xl bg-white rounded-lg border border-border-hairline space-y-3">
-<span class="material-symbols-outlined text-accent-royal text-[2rem]" data-icon="straighten">straighten</span>
-<h3 class="font-title-lg text-title-lg text-text-obsidian">Hands-on Implementation</h3>
-<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
-              We don’t just drop a 40-page strategy PDF and walk away. We build, configure, connect the cables, and train your staff.
-            </p>
-</div>
-<!-- Pillar 4 -->
-<div class="p-space-xl bg-white rounded-lg border border-border-hairline space-y-3">
-<span class="material-symbols-outlined text-accent-royal text-[2rem]" data-icon="payments">payments</span>
-<h3 class="font-title-lg text-title-lg text-text-obsidian">Clear, Fair Economics</h3>
-<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
-              Fixed milestones, zero hidden licensing markups, and transparent roadmaps built for reasonable small business budgets.
-            </p>
-</div>
-</div>
-</div>
-</section>
-<!-- PROMINENT INTAKE SECTION / CONNECT WITH US -->
-<section class="py-space-5xl px-space-xl bg-white border-t border-border-hairline" id="contact">
-<div class="max-w-container-max mx-auto">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-3xl items-start">
-<!-- Contextual Left Column -->
-<div class="lg:col-span-5 space-y-space-lg">
-<span class="font-label-md text-label-md text-accent-royal tracking-widest block">START THE DIALOGUE</span>
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-text-obsidian">
-              Let's Talk About Your Business.
-            </h2>
-<p class="font-body-lg text-body-lg text-text-muted leading-relaxed">
-              Whether you're starting from scratch or ready to modernize your existing setup, tell us a bit about where you want to go. No pressure, no obligations—just honest, practical advice.
-            </p>
-<div class="pt-space-md space-y-space-md border-t border-border-hairline">
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-accent-royal text-[1.25rem] mt-0.5" data-icon="mail">mail</span>
-<div>
-<p class="font-title-md text-title-md text-text-obsidian">Direct Inquiries</p>
-<a class="font-body-md text-body-md text-accent-royal hover:underline" href="mailto:ceo@alphasonicsoltuion.com">
-                    ceo@alphasonicsoltuion.com
-                  </a>
-</div>
-</div>
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-accent-royal text-[1.25rem] mt-0.5" data-icon="call">call</span>
-<div>
-<p class="font-title-md text-title-md text-text-obsidian">Direct Consultation Line</p>
-<p class="font-body-md text-body-md text-text-muted">+91 70213 54835 (Mon–Fri, 9am–5pm IST)</p>
-</div>
-</div>
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-accent-royal text-[1.25rem] mt-0.5" data-icon="schedule">schedule</span>
-<div>
-<p class="font-title-md text-title-md text-text-obsidian">Guaranteed Response</p>
-<p class="font-body-md text-body-md text-text-muted">Every inquiry is reviewed by a partner within 24 business hours.</p>
-</div>
-</div>
-</div>
-</div>
-<!-- Clean Modern Form (Right Column) -->
-<div class="lg:col-span-7 bg-surface-cream p-space-2xl rounded-lg border border-border-hairline shadow-sm">
-<form class="space-y-space-md" id="advisory-intake" onsubmit="event.preventDefault(); alert('Thank you. A senior partner will review your inquiry within 24 hours.');">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
-<!-- Business Name -->
-<div>
-<label class="block font-title-md text-title-md text-text-obsidian mb-1.5" for="biz-name">
-                    Business Name <span class="text-accent-royal">*</span>
-</label>
-<input class="w-full bg-white border border-border-hairline rounded-lg px-3.5 py-2.5 text-body-md text-text-obsidian focus:outline-none focus:border-accent-royal focus:ring-2 focus:ring-accent-royal/10 transition-colors" id="biz-name" placeholder="e.g., Summit Auto Restoration" required="" type="text"/>
-</div>
-<!-- Contact Person -->
-<div>
-<label class="block font-title-md text-title-md text-text-obsidian mb-1.5" for="contact-person">
-                    Contact Person <span class="text-accent-royal">*</span>
-</label>
-<input class="w-full bg-white border border-border-hairline rounded-lg px-3.5 py-2.5 text-body-md text-text-obsidian focus:outline-none focus:border-accent-royal focus:ring-2 focus:ring-accent-royal/10 transition-colors" id="contact-person" placeholder="Your full name" required="" type="text"/>
-</div>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
-<!-- Email -->
-<div>
-<label class="block font-title-md text-title-md text-text-obsidian mb-1.5" for="email-address">
-                    Email Address <span class="text-accent-royal">*</span>
-</label>
-<input class="w-full bg-white border border-border-hairline rounded-lg px-3.5 py-2.5 text-body-md text-text-obsidian focus:outline-none focus:border-accent-royal focus:ring-2 focus:ring-accent-royal/10 transition-colors" id="email-address" placeholder="name@business.com" required="" type="email"/>
-</div>
-<!-- Phone -->
-<div>
-<label class="block font-title-md text-title-md text-text-obsidian mb-1.5" for="phone-number">
-                    Phone / Mobile
-                  </label>
-<input class="w-full bg-white border border-border-hairline rounded-lg px-3.5 py-2.5 text-body-md text-text-obsidian focus:outline-none focus:border-accent-royal focus:ring-2 focus:ring-accent-royal/10 transition-colors" id="phone-number" placeholder="(555) 000-0000" type="tel"/>
-</div>
-</div>
-<!-- Current Challenge / Goal Dropdown -->
-<div>
-<label class="block font-title-md text-title-md text-text-obsidian mb-1.5" for="primary-goal">
-                  Current Challenge / Immediate Goal <span class="text-accent-royal">*</span>
-</label>
-<select class="w-full bg-white border border-border-hairline rounded-lg px-3.5 py-2.5 text-body-md text-text-obsidian focus:outline-none focus:border-accent-royal focus:ring-2 focus:ring-accent-royal/10 transition-colors" id="primary-goal" required="">
-<option disabled="" selected="" value="">Select what matters most right now</option>
-<option value="website">Launch a New Website or Storefront</option>
-<option value="local">Get More Local Customers &amp; Foot Traffic</option>
-<option value="automation">Automate Daily Tasks &amp; Appointment Booking</option>
-<option value="full">Full Digital Upgrade &amp; Strategic Advisory</option>
-</select>
-</div>
-<!-- Message Box -->
-<div>
-<label class="block font-title-md text-title-md text-text-obsidian mb-1.5" for="notes">
-                  Briefly Describe Your Business &amp; Goals
-                </label>
-<textarea class="w-full bg-white border border-border-hairline rounded-lg px-3.5 py-2.5 text-body-md text-text-obsidian focus:outline-none focus:border-accent-royal focus:ring-2 focus:ring-accent-royal/10 transition-colors resize-none" id="notes" placeholder="Tell us a bit about your current operations, what is frustrating you today, and what a win looks like over the next 6 months..." rows="4"></textarea>
-</div>
-<!-- Submit Button -->
-<div class="pt-space-xs">
-<button class="w-full bg-accent-royal hover:bg-accent-royal-hover active:bg-primary text-white font-title-lg text-title-lg py-3.5 px-6 rounded-lg transition-all duration-150 shadow-sm flex items-center justify-center gap-2" type="submit">
-<span>Send Message &amp; Connect</span>
-<span class="material-symbols-outlined text-[1.25rem]" data-icon="send">send</span>
-</button>
-<p class="font-body-sm text-body-sm text-text-muted text-center mt-2.5">
-                  Your privacy is respected. No spam, sales cadences, or outsourced cold callers.
-                </p>
-</div>
-</form>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- SHARED COMPONENT 2: Footer -->
-<footer class="docked full-width bottom bg-surface-cream dark:bg-inverse-surface border-t border-border-hairline dark:border-outline-variant">
-<div class="flex flex-col md:flex-row justify-between items-center w-full px-space-xl py-space-xl max-w-container-max mx-auto gap-space-md">
-<!-- Copyright & Advisory Creed from JSON -->
-<div class="text-center md:text-left">
-<p class="font-body-sm text-body-sm text-text-muted dark:text-outline-variant">
-          © 2026 Alphasonic Solution. Digital Advisory. Guiding small businesses with enduring care.
-        </p>
-</div>
+          </div>
+        </div>
 
-</div>
-</footer>
-</body></html>
+        <!-- Card 2: Local Google Domination -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <div class="service-icon-box" style="background: #ecfdf5; color: #059669;">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                <line x1="8" y1="2" x2="8" y2="18"></line>
+                <line x1="16" y1="6" x2="16" y2="22"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Google Maps &amp; Local Search Domination</h3>
+            <p class="service-plain-desc">
+              Dominate your local neighborhood. When someone nearby searches for your trade or product, you show up at the very top of Google Maps with glowing 5-star ratings.
+            </p>
+
+            <ul class="service-feature-list">
+              <li class="service-feature-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Google 3-Pack ranking acceleration</span>
+              </li>
+              <li class="service-feature-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Automated review collection via WhatsApp/SMS</span>
+              </li>
+              <li class="service-feature-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Direct "Click to Call" &amp; driving directions focus</span>
+              </li>
+            </ul>
+
+            <!-- Tech Spec Box -->
+            <div class="tech-spec-box">
+              <div style="font-weight: 700; margin-bottom: 4px;">// LOCAL SEO ALGORITHMS</div>
+              <div>LocalBusiness schema JSON-LD, geo-coordinated tagging, NAP consistency across 50+ directories, GBP API review webhooks.</div>
+              <div class="tech-tag-list">
+                <span class="tech-pill">Schema.org</span>
+                <span class="tech-pill">Google Business API</span>
+                <span class="tech-pill">Geo-Coordinates</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card-footer">
+            <span class="service-stat-tag">+180% Inbound Calls</span>
+            <a class="service-link" href="#contact">
+              <span>Learn More</span>
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Smart Business Automation -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <div class="service-icon-box" style="background: #fefce8; color: #d97706;">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <polyline points="23 4 23 10 17 10"></polyline>
+                <polyline points="1 20 1 14 7 14"></polyline>
+                <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Smart Business Automations &amp; AI Workflows</h3>
+            <p class="service-plain-desc">
+              Stop juggling paper receipts, missed calls, and manual calendars. We set up automatic WhatsApp booking alerts, instant confirmations, and frictionless invoicing.
+            </p>
+
+            <ul class="service-feature-list">
+              <li class="service-feature-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Automated appointment reminders on WhatsApp</span>
+              </li>
+              <li class="service-feature-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Instant digital quotes, invoices &amp; auto-receipts</span>
+              </li>
+              <li class="service-feature-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Zero manual double-entry for your staff</span>
+              </li>
+            </ul>
+
+            <!-- Tech Spec Box -->
+            <div class="tech-spec-box">
+              <div style="font-weight: 700; margin-bottom: 4px;">// WORKFLOW INTEGRATIONS</div>
+              <div>Zapier / Make / n8n pipelines, Twilio SMS &amp; Meta WhatsApp Cloud API, CRM synchronization (HubSpot / custom webhooks).</div>
+              <div class="tech-tag-list">
+                <span class="tech-pill">WhatsApp API</span>
+                <span class="tech-pill">Make / n8n</span>
+                <span class="tech-pill">Webhook Routing</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card-footer">
+            <span class="service-stat-tag">Saves 15+ hrs/week</span>
+            <a class="service-link" href="#contact">
+              <span>Learn More</span>
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4: Targeted Local Ads -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <div class="service-icon-box" style="background: #fff7ed; color: #ea580c;">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Laser-Targeted Local Ads That Actually Work</h3>
+            <p class="service-plain-desc">
+              Put $1 in and get $3+ out. We build geo-fenced Meta &amp; Google ad campaigns aimed specifically at ready-to-buy neighbors within a 5 to 15 mile radius of your business.
+            </p>
+
+            <ul class="service-feature-list">
+              <li class="service-feature-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Laser-targeted zip code &amp; demographic campaigns</span>
+              </li>
+              <li class="service-feature-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>VIP customer retargeting to bring past clients back</span>
+              </li>
+              <li class="service-feature-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Weekly plain-English performance report</span>
+              </li>
+            </ul>
+
+            <!-- Tech Spec Box -->
+            <div class="tech-spec-box">
+              <div style="font-weight: 700; margin-bottom: 4px;">// ATTRIBUTION INFRASTRUCTURE</div>
+              <div>Server-side Conversions API (CAPI), Google Ads GCLID matching, multi-touch UTM tracking, and split-test landing page variants.</div>
+              <div class="tech-tag-list">
+                <span class="tech-pill">Meta CAPI</span>
+                <span class="tech-pill">Google Ads</span>
+                <span class="tech-pill">UTM Funnels</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card-footer">
+            <span class="service-stat-tag">4.2x Average ROAS</span>
+            <a class="service-link" href="#contact">
+              <span>Learn More</span>
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 5: Custom Client Portals -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <div class="service-icon-box" style="background: #f5f3ff; color: #7c3aed;">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="service-title">Custom Portals &amp; Internal Dashboards</h3>
+            <p class="service-plain-desc">
+              Have unique requirements? We craft custom client login portals, project trackers, and staff dashboards tailored exactly to how your business operates.
+            </p>
+
+            <ul class="service-feature-list">
+              <li class="service-feature-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Passwordless client login &amp; document vault</span>
+              </li>
+              <li class="service-feature-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Live status tracking for ongoing client jobs</span>
+              </li>
+              <li class="service-feature-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Clean, fast mobile layout for field staff</span>
+              </li>
+            </ul>
+
+            <!-- Tech Spec Box -->
+            <div class="tech-spec-box">
+              <div style="font-weight: 700; margin-bottom: 4px;">// FULL-STACK SYSTEM</div>
+              <div>TypeScript, Node.js backend, PostgreSQL / Supabase, row-level security (RLS), JWT tokens, and automated database backups.</div>
+              <div class="tech-tag-list">
+                <span class="tech-pill">TypeScript</span>
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">Supabase Auth</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card-footer">
+            <span class="service-stat-tag">100% Tailored Fit</span>
+            <a class="service-link" href="#contact">
+              <span>Learn More</span>
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 6: Brand Identity & Elevation -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <div class="service-icon-box" style="background: #fdf2f8; color: #db2777;">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                <path d="M2 2l7.586 7.586"></path>
+                <circle cx="11" cy="11" r="2"></circle>
+              </svg>
+            </div>
+            <h3 class="service-title">Brand Elevation &amp; High-Trust Identity</h3>
+            <p class="service-plain-desc">
+              Command higher prices by looking like the market leader. We polish your logo, website words, and customer presentation so clients choose you over cheap competitors.
+            </p>
+
+            <ul class="service-feature-list">
+              <li class="service-feature-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>High-converting copywriting that clearly explains your value</span>
+              </li>
+              <li class="service-feature-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Crisp vector logo &amp; typography brand kit</span>
+              </li>
+              <li class="service-feature-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Google Business &amp; social media visual assets</span>
+              </li>
+            </ul>
+
+            <!-- Tech Spec Box -->
+            <div class="tech-spec-box">
+              <div style="font-weight: 700; margin-bottom: 4px;">// DESIGN TOKENS &amp; ASSETS</div>
+              <div>Figma vector components, SVG asset exports, responsive typography scales, WCAG 2.1 AA accessible contrast compliance.</div>
+              <div class="tech-tag-list">
+                <span class="tech-pill">Vector SVG</span>
+                <span class="tech-pill">WCAG AA</span>
+                <span class="tech-pill">Figma Tokens</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card-footer">
+            <span class="service-stat-tag">Instant Trust Boost</span>
+            <a class="service-link" href="#contact">
+              <span>Learn More</span>
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       THE REAL DIFFERENCE: BEFORE vs AFTER
+       ======================================================================== -->
+  <section class="section-warm" id="comparison">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill badge-yellow section-tag">THE REAL COMPARISON</div>
+        <h2 class="section-title">The Old Headache vs <span class="text-highlight">The Alphasonic Way</span></h2>
+        <p class="section-desc">
+          Compare the everyday reality. See how moving to an intelligent, automated digital setup transforms your operations and relieves stress.
+        </p>
+      </div>
+
+      <div class="comparison-grid">
+        <!-- Old Way Card -->
+        <div class="comparison-card old-way">
+          <div class="comparison-badge badge-bad">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            <span>The Old Way (Stress &amp; Lost Customers)</span>
+          </div>
+          <h3 class="comparison-title">Falling Behind Competitors</h3>
+          <p style="color: var(--ink-muted); font-size: 0.95rem;">
+            Struggling with slow websites, missed phone calls, and spending weekends doing manual data entry.
+          </p>
+
+          <ul class="comparison-list">
+            <li class="comparison-item">
+              <svg class="comp-icon-bad" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+              <span><strong>Slow, clumsy website:</strong> Takes 6+ seconds to load on phones; impatient visitors tap the back button immediately.</span>
+            </li>
+            <li class="comparison-item">
+              <svg class="comp-icon-bad" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+              <span><strong>Invisible on Google Maps:</strong> Stuck on page 3 while lesser competitors grab all nearby neighborhood leads.</span>
+            </li>
+            <li class="comparison-item">
+              <svg class="comp-icon-bad" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+              <span><strong>Endless phone tag:</strong> Playing phone tag with customers who already booked someone else who had online booking.</span>
+            </li>
+            <li class="comparison-item">
+              <svg class="comp-icon-bad" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+              <span><strong>Held hostage by developers:</strong> Small text or price changes take 3 weeks and cost exorbitant hourly rates.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- New Way Card -->
+        <div class="comparison-card new-way">
+          <div class="comparison-badge badge-good">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>The Alphasonic Way (Growth On Autopilot)</span>
+          </div>
+          <h3 class="comparison-title">Effortless Growth &amp; Total Peace of Mind</h3>
+          <p style="color: var(--ink-muted); font-size: 0.95rem;">
+            A clean, high-performing digital engine that works for you 24/7, books appointments, collects money, and gets 5-star reviews.
+          </p>
+
+          <ul class="comparison-list">
+            <li class="comparison-item">
+              <svg class="comp-icon-good" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span><strong>Lightning speed (< 0.8s):</strong> Built for instant mobile shopping and effortless 1-tap bookings.</span>
+            </li>
+            <li class="comparison-item">
+              <svg class="comp-icon-good" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span><strong>Dominating Google 3-Pack:</strong> Glowing reviews collected automatically, making you the obvious local choice.</span>
+            </li>
+            <li class="comparison-item">
+              <svg class="comp-icon-good" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span><strong>Automated reminders &amp; bookings:</strong> Instant WhatsApp and SMS alerts keep your calendar full without lifting a finger.</span>
+            </li>
+            <li class="comparison-item">
+              <svg class="comp-icon-good" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span><strong>100% Full Control:</strong> Easy dashboard to update anything in 30 seconds, plus our direct WhatsApp support desk.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       INTERACTIVE ROI & GROWTH CALCULATOR
+       ======================================================================== -->
+  <section id="calculator">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill badge-green section-tag">INSTANT RETURN ESTIMATOR</div>
+        <h2 class="section-title">See Your Potential <span class="text-highlight">Return on Investment</span></h2>
+        <p class="section-desc">
+          Drag the sliders to match your current business. Watch how improving your conversions and automating follow-ups directly affects your bottom line.
+        </p>
+      </div>
+
+      <div class="calc-card">
+        <!-- Sliders (Left) -->
+        <div class="calc-inputs">
+          <div>
+            <label style="font-weight: 700; margin-bottom: 6px; display: block;">1. Select Your Business Category:</label>
+            <div class="biz-chips">
+              <button class="biz-chip active" data-mult="1.35">Retail Storefront</button>
+              <button class="biz-chip" data-mult="1.60">Clinic / Healthcare</button>
+              <button class="biz-chip" data-mult="1.85">Trades / Home Services</button>
+              <button class="biz-chip" data-mult="1.45">Agency &amp; Consulting</button>
+            </div>
+          </div>
+
+          <div class="calc-group">
+            <div class="calc-label-row">
+              <label for="calc-leads-slider">Monthly Inquiries / Visitors:</label>
+              <span class="calc-value-pill" id="calc-leads-val">65 / month</span>
+            </div>
+            <input type="range" min="15" max="300" step="5" value="65" class="range-slider" id="calc-leads-slider" />
+          </div>
+
+          <div class="calc-group">
+            <div class="calc-label-row">
+              <label for="calc-ticket-slider">Average Customer Value:</label>
+              <span class="calc-value-pill" id="calc-ticket-val">$350</span>
+            </div>
+            <input type="range" min="50" max="2500" step="50" value="350" class="range-slider" id="calc-ticket-slider" />
+          </div>
+
+          <div style="font-size: 0.82rem; color: var(--ink-muted);">
+            * Calculations based on real 12-month client averages following Alphasonic Solution's conversion framework.
+          </div>
+        </div>
+
+        <!-- Calculated Results (Right) -->
+        <div class="calc-results">
+          <div>
+            <div class="calc-result-header">Estimated Extra Monthly Revenue</div>
+            <div class="calc-big-stat" id="calc-stat-revenue">+$4,200</div>
+            <div class="calc-sub-stat">That's +$50,400 per year in added sales</div>
+
+            <ul class="calc-feature-list">
+              <li class="calc-feature-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Estimated Time Saved: <strong id="calc-stat-hours" style="color: var(--ink-black);">14 hrs/week</strong></span>
+              </li>
+              <li class="calc-feature-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Projected Payback Window: <strong id="calc-stat-payback" style="color: var(--brand-blue);">< 32 Days</strong></span>
+              </li>
+              <li class="calc-feature-item">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Automated review collection enabled</span>
+              </li>
+            </ul>
+          </div>
+
+          <a class="btn btn-primary trigger-confetti" href="#contact">
+            <span>Unlock This Growth Blueprint</span>
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       REAL CASE STORIES (TANGIBLE PROOF)
+       ======================================================================== -->
+  <section class="section-porcelain" id="outcomes">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill badge-blue section-tag">VERIFIED RESULTS</div>
+        <h2 class="section-title">Independent Businesses <span class="text-highlight-blue">Winning Big</span></h2>
+        <p class="section-desc">
+          Real numbers from real business owners who partnered with Alphasonic Solution to transform their digital presence.
+        </p>
+      </div>
+
+      <div class="outcomes-grid">
+        <!-- Story 1 -->
+        <div class="outcome-card">
+          <div class="outcome-header">
+            <span class="outcome-tag">Artisan Food &amp; Retail</span>
+            <h3 class="outcome-client-name">Oakhaven Heritage Bakery</h3>
+            <p class="outcome-client-type">32-year-old family sourdough bakery</p>
+          </div>
+          <div class="outcome-body">
+            <div>
+              <div class="outcome-stat-big">3.2x</div>
+              <div class="outcome-stat-label">Online Pre-order Demand</div>
+              <p class="outcome-quote">
+                “Alphasonic shifted our weekend morning pastry orders to pre-paid online reservations. No more chaotic lines wrapping around the block, and zero unsold pastry waste!”
+              </p>
+            </div>
+            <div class="outcome-footer-pill">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Custom Mobile Ordering + Local Pickup Engine</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="outcome-card">
+          <div class="outcome-header">
+            <span class="outcome-tag">Home Trades &amp; Field Services</span>
+            <h3 class="outcome-client-name">Pemberton Mechanical</h3>
+            <p class="outcome-client-type">Residential plumbing &amp; HVAC provider</p>
+          </div>
+          <div class="outcome-body">
+            <div>
+              <div class="outcome-stat-big" style="color: var(--pop-emerald);">+180%</div>
+              <div class="outcome-stat-label">Automated Inquiries &amp; Bookings</div>
+              <p class="outcome-quote">
+                “We used to lose customers because we couldn't answer phones while fixing pipes. Alphasonic built an automated booking and SMS follow-up system that runs 24/7.”
+              </p>
+            </div>
+            <div class="outcome-footer-pill">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <span>4.9★ Local Rating Across 240+ Verified Reviews</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 3 -->
+        <div class="outcome-card">
+          <div class="outcome-header">
+            <span class="outcome-tag">Health, Wellness &amp; Fitness</span>
+            <h3 class="outcome-client-name">The Movement Collective</h3>
+            <p class="outcome-client-type">Independent neighborhood pilates studio</p>
+          </div>
+          <div class="outcome-body">
+            <div>
+              <div class="outcome-stat-big" style="color: var(--pop-purple);">+84%</div>
+              <div class="outcome-stat-label">Recurring Member Retention</div>
+              <p class="outcome-quote">
+                “The membership portal and automated class waitlist system Alphasonic built allowed us to expand to a second studio without having to hire extra administrative staff.”
+              </p>
+            </div>
+            <div class="outcome-footer-pill">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Automated Monthly Stripe Subscription Gateway</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4-STEP ZERO-STRESS PROCESS
+       ======================================================================== -->
+  <section id="process">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill badge-yellow section-tag">ZERO STRESS ROADMAP</div>
+        <h2 class="section-title">How We Build Your <span class="text-highlight">Growth Engine</span></h2>
+        <p class="section-desc">
+          No confusing tech meetings. No four-month delays. We follow a crystal-clear, transparent 4-step framework.
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="step-num-badge">01</div>
+          <h3>Quick Discovery Chat</h3>
+          <p>
+            A friendly 20-minute conversation. We listen to where your business hurts today and what winning looks like for you over the next 6 months.
+          </p>
+        </div>
+
+        <div class="process-card">
+          <div class="step-num-badge">02</div>
+          <h3>Blueprint &amp; Design</h3>
+          <p>
+            We present your custom design and system blueprint. You see exactly how it will look, feel, and function before writing a single line of code.
+          </p>
+        </div>
+
+        <div class="process-card">
+          <div class="step-num-badge">03</div>
+          <h3>Build &amp; Automate</h3>
+          <p>
+            We build the website, integrate Stripe payments, hook up WhatsApp/SMS alerts, and optimize your local Google Maps presence.
+          </p>
+        </div>
+
+        <div class="process-card">
+          <div class="step-num-badge">04</div>
+          <h3>Launch &amp; Celebrate</h3>
+          <p>
+            We go live, train you in 15 minutes, and stand by your side with direct WhatsApp support to ensure customers start rolling in.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       PHILOSOPHY & VALUE PROPOSITION
+       ======================================================================== -->
+  <section class="section-warm" id="philosophy">
+    <div class="container">
+      <div class="philosophy-layout">
+        <div>
+          <div class="badge-pill badge-blue section-tag">OUR PROMISE</div>
+          <h2 class="section-title">Practical. Honest. <span class="text-highlight">Measurable.</span></h2>
+          <p style="color: var(--ink-body); font-size: 1.05rem; line-height: 1.7; margin-top: 14px;">
+            Most digital agencies speak in buzzwords to justify endless monthly retainers while you wait months with nothing to show. At <strong>Alphasonic Solution</strong>, we operate as your trusted partner. We don’t rest until your phones are ringing and your bank balance shows undeniable progress.
+          </p>
+
+          <div class="quote-box">
+            <p>
+              “We build enduring digital systems that you 100% own—never hostage platforms that you can't run without us.”
+            </p>
+            <div style="font-size: 0.85rem; color: var(--brand-blue); font-weight: 700; margin-top: 8px;">
+              — The Alphasonic Advisory Creed
+            </div>
+          </div>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h4>No Corporate Red Tape</h4>
+            <p>Work directly with seasoned senior creators who understand unit economics, payroll, and practical business pressures.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h4>You Own Everything</h4>
+            <p>Your domain, your code, your customer lists, and your Stripe account belong 100% to you from day one. No locks, no traps.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            </div>
+            <h4>Lightning Turnaround</h4>
+            <p>Most projects go live in 10 to 18 business days, not 6 months of endless corporate committee meetings.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+            </div>
+            <h4>Transparent Pricing</h4>
+            <p>Clear, fixed project milestones with zero surprise invoices or sneaky hidden software markups.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FREQUENTLY ASKED QUESTIONS (FAQ ACCORDION)
+       ======================================================================== -->
+  <section class="section-porcelain" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill badge-yellow section-tag">COMMON QUESTIONS</div>
+        <h2 class="section-title">Everything You Need <span class="text-highlight">To Know</span></h2>
+        <p class="section-desc">
+          Simple, honest answers to the questions business owners ask us most frequently.
+        </p>
+      </div>
+
+      <div class="faq-list">
+        <!-- FAQ 1 -->
+        <div class="faq-item active">
+          <button class="faq-question-btn">
+            <span>I'm not tech-savvy at all. Can I still easily manage my website?</span>
+            <div class="faq-arrow">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <strong>Absolutely!</strong> We build everything with a clean, foolproof visual dashboard. If you know how to send an email or type a message, you can update text, upload photos, or change prices in less than 30 seconds. Plus, we provide a 15-minute personalized video walkthrough and direct WhatsApp support whenever you need a hand.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>How fast can our new website or automation go live?</span>
+            <div class="faq-arrow">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Most standard high-converting websites and local automation setups are designed, approved, tested, and launched within <strong>10 to 18 business days</strong>. Larger custom portals or multi-location systems typically launch within 3 to 4 weeks.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>Do I own my website and code, or is there a monthly lock-in?</span>
+            <div class="faq-arrow">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <strong>You own 100% of everything.</strong> Your domain, your code, your design assets, and your customer data are completely yours. We never hold your assets hostage. If you ever choose to manage it yourself or pass it to an in-house team, you have all the keys.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>How does Alphasonic help us get to the top of Google Maps?</span>
+            <div class="faq-arrow">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              We optimize your Google Business Profile according to Google's official local ranking algorithm: adding proper schema markup, geo-tagged metadata, localized keywords, citation consistency across 50+ local directories, and setting up an automated SMS follow-up that gently asks happy customers for 5-star Google reviews right after service.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>What if we already have an existing website that needs an upgrade?</span>
+            <div class="faq-arrow">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              We can modernize your existing site seamlessly without losing any of your current SEO rankings or customer links. We migrate all your data, speed up loading times by up to 5x, make the design mobile-first, and hook up smart automations for appointments and lead capture.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CONTACT & INTAKE SECTION
+       ======================================================================== -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-layout">
+        <!-- Direct Channels (Left) -->
+        <div>
+          <div class="badge-pill badge-blue section-tag">START THE CONVERSATION</div>
+          <h2 class="section-title">Let’s Talk About <span class="text-highlight">Your Business</span></h2>
+          <p style="color: var(--ink-body); font-size: 1.05rem; line-height: 1.6; margin-top: 14px;">
+            Ready to turn your website into a reliable customer machine? Tell us a bit about where you want to go. No pressure, no aggressive sales pitches—just practical, honest advice.
+          </p>
+
+          <div class="contact-channels">
+            <div class="channel-card">
+              <div class="channel-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <div class="channel-title">Direct Inquiries</div>
+                <a href="mailto:contact@alphasonicsolution.com" class="channel-val" style="color: var(--brand-blue); text-decoration: underline;">
+                  contact@alphasonicsolution.com
+                </a>
+              </div>
+            </div>
+
+            <div class="channel-card">
+              <div class="channel-icon" style="background: #ecfdf5; color: #059669;">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div>
+                <div class="channel-title">Direct Consultation Line / WhatsApp</div>
+                <a href="https://wa.me/917021354835" target="_blank" rel="noopener" class="channel-val">
+                  +91 70213 54835 <span style="font-size: 0.82rem; color: #059669; font-weight: 600;">(Mon–Sat)</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="channel-card">
+              <div class="channel-icon" style="background: #fdf2f8; color: #db2777;">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </div>
+              <div>
+                <div class="channel-title">Official Instagram Page</div>
+                <a href="https://www.instagram.com/alphasonicsolution" target="_blank" rel="noopener" class="channel-val" style="color: #db2777; text-decoration: underline;">
+                  @alphasonicsolution
+                </a>
+              </div>
+            </div>
+
+            <div class="channel-card">
+              <div class="channel-icon" style="background: #fefce8; color: #d97706;">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              </div>
+              <div>
+                <div class="channel-title">Guaranteed Response</div>
+                <div class="channel-val" style="font-size: 0.95rem; font-weight: 600; color: var(--ink-dark);">
+                  Every inquiry is personally reviewed by a partner within 24 business hours.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form (Right) -->
+        <div class="contact-form-box">
+          <form id="advisory-intake" action="send-mail.php" method="POST">
+            <!-- Anti-spam Honeypot Field -->
+            <input type="text" name="_gotcha" style="display:none !important;" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="biz-name">Business Name <span style="color: var(--brand-blue);">*</span></label>
+                <input class="form-control" id="biz-name" name="biz_name" type="text" placeholder="e.g. Apex Auto Restoration" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-person">Your Name <span style="color: var(--brand-blue);">*</span></label>
+                <input class="form-control" id="contact-person" name="contact_person" type="text" placeholder="Your full name" required />
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="email-address">Work Email <span style="color: var(--brand-blue);">*</span></label>
+                <input class="form-control" id="email-address" name="email" type="email" placeholder="name@business.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone-number">Mobile / WhatsApp Number</label>
+                <input class="form-control" id="phone-number" name="phone" type="tel" placeholder="+91 or local phone" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="primary-goal">What Is Your Main Goal Right Now? <span style="color: var(--brand-blue);">*</span></label>
+              <select class="form-control" id="primary-goal" name="primary_goal" required>
+                <option value="" disabled selected>Select what matters most to your business</option>
+                <option value="website">Launch or Redesign a High-Converting Website / Store</option>
+                <option value="local">Get to #1 on Google Maps &amp; Local Search</option>
+                <option value="automation">Automate Bookings, WhatsApp Alerts &amp; Invoices</option>
+                <option value="ads">Run Profitable Meta / Google Ad Campaigns</option>
+                <option value="custom">Custom Web App, Client Portal or Dashboard</option>
+                <option value="full">Complete Digital Overhaul &amp; Strategic Advisory</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Tell Us Briefly About Your Business &amp; Current Bottlenecks</label>
+              <textarea class="form-control" id="notes" name="notes" placeholder="Tell us a bit about your current operations, what is frustrating you today, and what a win looks like over the next 6 months..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary trigger-confetti" style="width: 100%; padding: 16px;">
+              <span>Send Message &amp; Claim Blueprint</span>
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+
+            <div style="font-size: 0.8rem; color: var(--ink-muted); text-align: center; margin-top: 12px;">
+              🔒 100% Privacy Protected. No spam, no sales calls, no annoying marketing cadences.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FLOATING QUICK WHATSAPP BUTTON
+       ======================================================================== -->
+  <a class="floating-whatsapp-btn" href="https://wa.me/917021354835?text=Hello%20Alphasonic%20Solution,%20I'd%20like%20to%20learn%20more%20about%20your%20services!" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12.031 2C6.494 2 2 6.494 2 12.031c0 1.83.494 3.55 1.353 5.043L2 22l5.097-1.334a10.007 10.007 0 0 0 4.934 1.365c5.537 0 10.031-4.494 10.031-10.031C22.062 6.494 17.568 2 12.031 2zm5.787 14.195c-.244.686-1.42 1.31-1.956 1.393-.518.08-1.189.114-3.87-1-2.92-1.21-4.783-4.22-4.928-4.417-.145-.197-1.18-1.572-1.18-2.997 0-1.425.748-2.128 1.014-2.42.266-.293.58-.366.772-.366.193 0 .386.002.555.011.179.01.417-.068.65.493.243.58.823 2.012.895 2.158.073.146.121.317.024.512-.097.195-.146.317-.29.488-.146.17-.306.38-.437.51-.146.146-.298.305-.128.598.17.293.758 1.25 1.626 2.023 1.117.994 2.06 1.302 2.353 1.448.293.146.463.122.634-.073.17-.195.732-.853.927-1.146.195-.293.39-.244.659-.146.268.098 1.708.805 2.001.952.293.146.488.22.56.341.073.122.073.707-.171 1.393z"/>
+    </svg>
+  </a>
+
+  <!-- ========================================================================
+       FOOTER (Clean White Editorial)
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="nav-brand" style="margin-bottom: 12px;">
+            <img src="mainlogo.png" alt="Alphasonic Solution Logo" class="brand-logo-img" />
+            <span class="brand-title">Alphasonic<span class="brand-dot">.</span></span>
+          </div>
+          <p class="footer-desc">
+            Empowering independent business leaders, trades, and local retailers with high-impact digital engineering and honest advisory.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Core Solutions</h5>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#services">Web &amp; E-Commerce</a></li>
+            <li><a class="footer-link" href="#services">Google Maps &amp; SEO</a></li>
+            <li><a class="footer-link" href="#services">Smart Automations</a></li>
+            <li><a class="footer-link" href="#services">Performance Ads</a></li>
+            <li><a class="footer-link" href="#services">Custom Web Portals</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#hero">Overview</a></li>
+            <li><a class="footer-link" href="#configurator">Custom Builder</a></li>
+            <li><a class="footer-link" href="#comparison">Before vs After</a></li>
+            <li><a class="footer-link" href="#calculator">ROI Calculator</a></li>
+            <li><a class="footer-link" href="#outcomes">Client Results</a></li>
+            <li><a class="footer-link" href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Direct Contact &amp; Social</h5>
+          <ul class="footer-links">
+            <li>
+              <a class="footer-social-pill" href="https://www.instagram.com/alphasonicsolution" target="_blank" rel="noopener" title="Follow Alphasonic Solution on Instagram">
+                <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                <span>@alphasonicsolution</span>
+              </a>
+            </li>
+            <li><a class="footer-link" href="mailto:contact@alphasonicsolution.com">contact@alphasonicsolution.com</a></li>
+            <li><a class="footer-link" href="https://wa.me/917021354835">+91 70213 54835 (IST)</a></li>
+            <li style="color: var(--ink-muted); font-size: 0.85rem; margin-top: 4px;">Available Monday – Saturday</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Alphasonic Solution. All rights reserved. Built for speed, conversions &amp; scale.
+        </div>
+        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+          <a href="#hero" class="footer-link">Back to Top ↑</a>
+          <a href="#contact" class="footer-link">Privacy Policy</a>
+          <a href="#contact" class="footer-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

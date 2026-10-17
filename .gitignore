@@ -1,0 +1,9 @@
+# Private credentials
+config.php
+.env
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
