@@ -1,0 +1,1999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Applied AI &amp; Computer Vision Services | Alphasonic Solution Labs</title>
+  <meta name="description" content="Explore 50+ custom computer vision, spatial intelligence, document AI, and industrial workplace safety models engineered for physical operations. Zero vendor lock-in." />
+  <link rel="icon" type="image/png" href="mainlogo.png" />
+
+  <!-- Google Fonts: Plus Jakarta Sans, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Blueprint Architectural Grid Texture -->
+  <div class="blueprint-grid-bg"></div>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- ========================================================================
+       TOP NAVIGATION BAR
+       ======================================================================== -->
+  <div class="navbar-wrapper">
+    <nav class="navbar" id="main-nav">
+      <!-- Brand Logo -->
+      <a class="nav-brand" href="index.html" aria-label="Alphasonic Solution Home">
+        <img src="mainlogo.png" alt="Alphasonic Solution Logo" class="brand-logo-img" />
+        <span class="brand-title">Alphasonic<span class="brand-dot">.</span> <span style="font-size: 0.82rem; font-weight: 700; color: var(--pop-purple); margin-left: 2px;">AI Labs</span></span>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-menu" id="nav-links">
+        <li><a class="nav-link" href="index.html">← Main Site</a></li>
+        <li><a class="nav-link" href="#industrial-safety">Safety (20)</a></li>
+        <li><a class="nav-link" href="#spatial-vision">Spatial (10)</a></li>
+        <li><a class="nav-link" href="#perception-search">Perception (10)</a></li>
+        <li><a class="nav-link" href="#document-ai">Document AI (10)</a></li>
+        <li><a class="nav-link" href="#ai-consultation">Consultation</a></li>
+      </ul>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <!-- Mechanical Sound Feedback Toggle -->
+        <button class="sound-toggle-btn desktop-sound-btn" id="sound-toggle" title="Toggle mechanical audio feedback">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <line x1="23" y1="9" x2="17" y2="15"></line>
+            <line x1="17" y1="9" x2="23" y2="15"></line>
+          </svg>
+          <span>Sound: OFF</span>
+        </button>
+
+        <a class="btn btn-primary" href="#ai-consultation">
+          <span>Inquire Model</span>
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" aria-label="Open Navigation Menu">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ========================================================================
+       HERO SECTION (High-Contrast Borderless AI Hero with Neural Canvas)
+       ======================================================================== -->
+  <header class="ai-page-hero">
+    <!-- Interactive AI Neural & Computer Vision Canvas -->
+    <canvas class="ai-neural-canvas"></canvas>
+
+    <!-- Computer Vision Sweeping Laser Scanline -->
+    <div class="ai-scanline-beam"></div>
+
+    <div class="container">
+      <div class="ai-hero-inner">
+        <!-- Breadcrumb Pill -->
+        <div class="badge-pill badge-purple" style="margin-bottom: 14px;">
+          <span class="ai-pulse-dot"></span>
+          <span>ALPHASONIC APPLIED AI DIRECTORY • 50 SPECIALIZED VISION MODELS</span>
+        </div>
+
+        <!-- Live Telemetry HUD Bar -->
+        <div class="ai-telemetry-hud">
+          <div class="ai-telemetry-item">
+            <span class="ai-pulse-dot" style="background: var(--pop-emerald); box-shadow: 0 0 8px rgba(5, 150, 105, 0.7);"></span>
+            <span class="ai-telemetry-label">INFERENCE:</span>
+            <span class="ai-telemetry-val" style="color: var(--pop-emerald);">ONLINE</span>
+          </div>
+          <div class="ai-telemetry-divider"></div>
+          <div class="ai-telemetry-item">
+            <span class="ai-telemetry-label">LATENCY:</span>
+            <span class="ai-telemetry-val ai-live-latency">14.2ms</span>
+          </div>
+          <div class="ai-telemetry-divider"></div>
+          <div class="ai-telemetry-item">
+            <span class="ai-telemetry-label">CATALOG:</span>
+            <span class="ai-telemetry-val">50 VERIFIED WEIGHTS</span>
+          </div>
+          <div class="ai-telemetry-divider desktop-only"></div>
+          <div class="ai-telemetry-item desktop-only">
+            <span class="ai-telemetry-label">PIPELINE:</span>
+            <span class="ai-telemetry-val">RTSP • JETSON • TENSORRT</span>
+          </div>
+        </div>
+
+        <h1 class="hero-title">
+          Custom Computer Vision &amp; AI <br />
+          Built for <span class="text-highlight">High-Stakes Physical Operations.</span>
+        </h1>
+
+        <p class="hero-subtitle" style="max-width: 760px; margin: 0 auto;">
+          We build, train, fine-tune, and deploy production-grade computer vision models on your existing RTSP security cameras, edge devices (NVIDIA Jetson, Intel OpenVINO), and private cloud APIs. Zero monthly SaaS hostage fees—you own 100% of your code and weights.
+        </p>
+
+        <!-- Benchmark Proof Strip -->
+        <div class="ai-stats-strip">
+          <div class="ai-stat-box">
+            <div class="ai-stat-val">50+</div>
+            <div class="ai-stat-sub">Production Vision Models</div>
+          </div>
+          <div class="trust-divider" style="height: 36px;"></div>
+          <div class="ai-stat-box">
+            <div class="ai-stat-val" style="color: var(--pop-emerald);">99.2%</div>
+            <div class="ai-stat-sub">Average Detection Accuracy</div>
+          </div>
+          <div class="trust-divider" style="height: 36px;"></div>
+          <div class="ai-stat-box">
+            <div class="ai-stat-val" style="color: var(--brand-blue);">15–80ms</div>
+            <div class="ai-stat-sub">Real-Time Edge Latency</div>
+          </div>
+          <div class="trust-divider" style="height: 36px;"></div>
+          <div class="ai-stat-box">
+            <div class="ai-stat-val" style="color: var(--pop-orange);">100%</div>
+            <div class="ai-stat-sub">Client Weights &amp; IP Ownership</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       STICKY LIVE SEARCH & CATEGORY FILTER TOOLBAR
+       ======================================================================== -->
+  <div class="ai-filter-sticky-bar">
+    <div class="container">
+      <div class="ai-filter-toolbar">
+        <!-- Live Instant Search Input -->
+        <div class="ai-search-box">
+          <svg class="ai-search-icon" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input 
+            type="text" 
+            id="ai-search-input" 
+            class="ai-search-input" 
+            placeholder="Search 50 models (e.g. helmet, invoice, OCR, pose, spill, price tag)..." 
+            autocomplete="off" 
+          />
+          <button class="ai-search-clear" id="ai-search-clear" title="Clear search">✕</button>
+        </div>
+
+        <!-- Category Pills -->
+        <div class="ai-category-tabs">
+          <button class="ai-cat-btn active" data-cat="all">
+            <span>All Solutions</span>
+            <span class="ai-cat-badge" id="cat-badge-all">50</span>
+          </button>
+          <button class="ai-cat-btn" data-cat="safety">
+            <span>Workplace Safety &amp; PPE</span>
+            <span class="ai-cat-badge">20</span>
+          </button>
+          <button class="ai-cat-btn" data-cat="spatial">
+            <span>Spatial &amp; Counting</span>
+            <span class="ai-cat-badge">10</span>
+          </button>
+          <button class="ai-cat-btn" data-cat="perception">
+            <span>Perception &amp; Search</span>
+            <span class="ai-cat-badge">10</span>
+          </button>
+          <button class="ai-cat-btn" data-cat="document">
+            <span>Document AI &amp; OCR</span>
+            <span class="ai-cat-badge">10</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Integrated Result Counter (Prevents text scrolling behind floating navbar) -->
+      <div class="ai-filter-subbar">
+        <div>
+          Showing <span id="visible-models-count" style="color: var(--ink-black); font-weight: 800;">50</span> of 50 Specialized AI Models
+        </div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--pop-purple);">
+          ● Edge Jetson • RTSP Feeds • Private Cloud API
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Catalog Container -->
+  <main class="container" style="padding-top: 20px; padding-bottom: 80px;">
+
+    <!-- No Results Placeholder -->
+    <div class="ai-no-results" id="ai-no-results">
+      <div style="font-size: 2.2rem; margin-bottom: 10px;">🔍</div>
+      <h3 style="font-size: 1.3rem; margin-bottom: 6px;">No Matching AI Models Found</h3>
+      <p style="color: var(--ink-muted); max-width: 480px; margin: 0 auto 18px auto;">
+        We build bespoke computer vision solutions for unlisted edge use-cases. Contact our engineering lead to discuss your specific camera feed or dataset.
+      </p>
+      <button class="btn btn-secondary" id="reset-search-btn">Reset Filters &amp; View All 50 Models</button>
+    </div>
+
+    <!-- ========================================================================
+         SECTION 1: INDUSTRIAL SAFETY, PPE DETECTION & HAZARD PREVENTION (20 Models)
+         ======================================================================== -->
+    <section class="ai-category-section" id="industrial-safety" data-category-group="safety">
+      <div class="ai-cat-section-header">
+        <div class="ai-cat-title-group">
+          <div class="badge-pill" style="background: #fef2f2; color: #dc2626; border: 1.5px solid #fca5a5; margin-bottom: 8px;">
+            <span>PILLAR 01 • WORKPLACE SAFETY &amp; PPE VISION</span>
+          </div>
+          <h2>Industrial Safety, PPE Detection &amp; Hazard Surveillance</h2>
+          <p>
+            Real-time automated compliance auditing and active hazard alarms for manufacturing plants, heavy construction sites, chemical bays, and logistics terminals.
+          </p>
+        </div>
+        <div class="ai-count-tag" style="background: #fef2f2; color: #dc2626; border-color: #fca5a5;">
+          20 Models
+        </div>
+      </div>
+
+      <div class="ai-models-grid">
+        <!-- Model 01: Helmet Detection -->
+        <article class="ai-model-card" data-category="safety" data-keywords="helmet hard hat worker construction head ppe safety easy medium">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#01 • SAFETY</span>
+              <span class="diff-badge diff-easy">Easy–Medium</span>
+            </div>
+            <div class="ai-card-media">
+              <img src="public/helmet.png" alt="Helmet Detection AI Model Inference" loading="lazy" />
+              <div class="ai-card-media-badge"><span class="ai-card-media-dot"></span> LIVE INFERENCE 98%</div>
+            </div>
+            <h3 class="ai-model-title">Helmet Detection</h3>
+            <span class="ai-tech-pill">Hard Hat Classification + Worker Tracking</span>
+            <p class="ai-model-desc">
+              Continuously monitor construction sites, cranes, and refinery bays to instantly alert supervisors if workers enter hazardous active zones without hard hats.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">RTSP Security Cam</span>
+              <span class="ai-deploy-tag">Edge Jetson</span>
+              <span class="ai-deploy-tag">Audio Strobe Trigger</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Helmet Detection" data-tech="Hard Hat Classification + Worker Tracking">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 02: Safety Vest Detection -->
+        <article class="ai-model-card" data-category="safety" data-keywords="safety vest high visibility jacket reflective clothing traffic ppe easy medium">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#02 • SAFETY</span>
+              <span class="diff-badge diff-easy">Easy–Medium</span>
+            </div>
+            <div class="ai-card-media">
+              <img src="public/safty%20vest.png" alt="Safety Vest Detection AI Model Inference" loading="lazy" />
+              <div class="ai-card-media-badge"><span class="ai-card-media-dot"></span> LIVE INFERENCE 97%</div>
+            </div>
+            <h3 class="ai-model-title">Safety Vest Detection</h3>
+            <span class="ai-tech-pill">High-Visibility Clothing Segmentation</span>
+            <p class="ai-model-desc">
+              Verify mandatory fluorescent yellow/orange reflective vest usage in heavy vehicle corridors, apron aprons, and dock loading zones day and night.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Reflective Strip Check</span>
+              <span class="ai-deploy-tag">Traffic Lanes</span>
+              <span class="ai-deploy-tag">Day &amp; Night IR</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Safety Vest Detection" data-tech="High-Visibility Clothing Segmentation">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 03: Safety Goggles Detection -->
+        <article class="ai-model-card" data-category="safety" data-keywords="safety goggles eye protection glasses grinding welding splash medium hard">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#03 • SAFETY</span>
+              <span class="diff-badge diff-medium-hard">Medium–Hard</span>
+            </div>
+            <div class="ai-card-media">
+              <img src="public/safty%20gogles.png" alt="Safety Goggles Detection AI Model Inference" loading="lazy" />
+              <div class="ai-card-media-badge"><span class="ai-card-media-dot"></span> LIVE INFERENCE 96%</div>
+            </div>
+            <h3 class="ai-model-title">Safety Goggles Detection</h3>
+            <span class="ai-tech-pill">Eye Protection Feature Matching</span>
+            <p class="ai-model-desc">
+              Inspect lathe, milling, and chemical stations to ensure machine operators wear certified safety glasses or sealed goggles before machinery unlocks.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Close-up Camera</span>
+              <span class="ai-deploy-tag">Facial Region Crop</span>
+              <span class="ai-deploy-tag">Interlock Relay</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Safety Goggles Detection" data-tech="Eye Protection Feature Matching">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 04: Safety Gloves Detection -->
+        <article class="ai-model-card" data-category="safety" data-keywords="safety gloves hand protection cut thermal chemical medium hard">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#04 • SAFETY</span>
+              <span class="diff-badge diff-medium-hard">Medium–Hard</span>
+            </div>
+            <div class="ai-card-media">
+              <img src="public/safty%20gloves.png" alt="Safety Gloves Detection AI Model Inference" loading="lazy" />
+              <div class="ai-card-media-badge"><span class="ai-card-media-dot"></span> LIVE INFERENCE 95%</div>
+            </div>
+            <h3 class="ai-model-title">Safety Gloves Detection</h3>
+            <span class="ai-tech-pill">Hand Protection Classification</span>
+            <p class="ai-model-desc">
+              Differentiate bare hands from protective chemical, thermal, or cut-resistant gloves in sharp sheet-metal handling and caustic chemical labs.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Hand Keypoints</span>
+              <span class="ai-deploy-tag">Color/Texture Classifier</span>
+              <span class="ai-deploy-tag">Chemical Lines</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Safety Gloves Detection" data-tech="Hand Protection Classification">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 05: Safety Shoe Detection -->
+        <article class="ai-model-card" data-category="safety" data-keywords="safety shoe boots steel toe footwear turnstile entrance medium hard">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#05 • SAFETY</span>
+              <span class="diff-badge diff-medium-hard">Medium–Hard</span>
+            </div>
+            <div class="ai-card-media">
+              <img src="public/safty%20shoes.png" alt="Safety Shoe Detection AI Model Inference" loading="lazy" />
+              <div class="ai-card-media-badge"><span class="ai-card-media-dot"></span> LIVE INFERENCE 97%</div>
+            </div>
+            <h3 class="ai-model-title">Safety Shoe Detection</h3>
+            <span class="ai-tech-pill">Steel-Toe &amp; Footwear Classification</span>
+            <p class="ai-model-desc">
+              Detect prohibited open-toed shoes, sandals, or street sneakers at plant entrance turnstiles and warehouse heavy-loading docks.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Turnstile Scanner</span>
+              <span class="ai-deploy-tag">Footwear Model</span>
+              <span class="ai-deploy-tag">Access Gate Relay</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Safety Shoe Detection" data-tech="Steel-Toe &amp; Footwear Classification">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 06: Face Shield Detection -->
+        <article class="ai-model-card" data-category="safety" data-keywords="face shield welding grinding visor protection mask medium hard">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#06 • SAFETY</span>
+              <span class="diff-badge diff-medium-hard">Medium–Hard</span>
+            </div>
+            <div class="ai-card-media">
+              <img src="public/face%20shiled.png" alt="Face Shield Detection AI Model Inference" loading="lazy" />
+              <div class="ai-card-media-badge"><span class="ai-card-media-dot"></span> LIVE INFERENCE 98%</div>
+            </div>
+            <h3 class="ai-model-title">Face Shield Detection</h3>
+            <span class="ai-tech-pill">Welding &amp; Grinding Visor Inspection</span>
+            <p class="ai-model-desc">
+              Confirm transparent polycarbonate or tinted welding shields are securely lowered over the worker's face during active sparks, grinding, and welding.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Visor-Down Check</span>
+              <span class="ai-deploy-tag">Spark Detection</span>
+              <span class="ai-deploy-tag">Hot Work Permits</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Face Shield Detection" data-tech="Welding &amp; Grinding Visor Inspection">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 07: Fall-Arrest Harness Detection -->
+        <article class="ai-model-card" data-category="safety" data-keywords="fall arrest harness tether lanyard scaffolding heights anchor hard">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#07 • SAFETY</span>
+              <span class="diff-badge diff-hard">Hard</span>
+            </div>
+            <h3 class="ai-model-title">Fall-Arrest Harness Detection</h3>
+            <span class="ai-tech-pill">Harness Strap &amp; Lanyard Anchor Verification</span>
+            <p class="ai-model-desc">
+              Check that workers elevated on scaffolding, boom lifts, or roofs have full-body harnesses strapped and properly clipped to anchored safety lifelines.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Scaffolding Camera</span>
+              <span class="ai-deploy-tag">Anchor Point Tracker</span>
+              <span class="ai-deploy-tag">Critical Life Safety</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-purple); font-weight: 700;">★ Advanced Pipeline</span>
+            <button class="ai-inquire-btn" data-model="Fall-Arrest Harness Detection" data-tech="Harness Strap &amp; Lanyard Anchor Verification">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 08: Restricted-Zone Detection -->
+        <article class="ai-model-card" data-category="safety" data-keywords="restricted zone geofence intrusion redline boundary high voltage medium">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#08 • SAFETY</span>
+              <span class="diff-badge diff-medium">Medium</span>
+            </div>
+            <h3 class="ai-model-title">Restricted-Zone Detection</h3>
+            <span class="ai-tech-pill">Geofence Polygon + Intrusion Tracking</span>
+            <p class="ai-model-desc">
+              Draw virtual polygon zones around robotic cells, high-voltage transformers, and conveyor pinch points to trigger sub-second safety shutoffs on breach.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Virtual Polygon</span>
+              <span class="ai-deploy-tag">Sub-Second Alarm</span>
+              <span class="ai-deploy-tag">PLC E-Stop Relay</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Restricted-Zone Detection" data-tech="Geofence Polygon + Intrusion Tracking">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 09: Worker–Forklift Proximity -->
+        <article class="ai-model-card" data-category="safety" data-keywords="forklift worker proximity collision pedestrian warehouse blind spot hard">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#09 • SAFETY</span>
+              <span class="diff-badge diff-hard">Hard</span>
+            </div>
+            <h3 class="ai-model-title">Worker–Forklift Proximity</h3>
+            <span class="ai-tech-pill">Spatial Distance &amp; Collision Trajectory</span>
+            <p class="ai-model-desc">
+              Calculate physical distance between moving forklifts and foot pedestrians in warehouse blind-spots, activating audio/visual warning strobes.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Collision Prediction</span>
+              <span class="ai-deploy-tag">Wide-Angle Overhead</span>
+              <span class="ai-deploy-tag">Driver Strobe Alert</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-purple); font-weight: 700;">★ Advanced Pipeline</span>
+            <button class="ai-inquire-btn" data-model="Worker–Forklift Proximity" data-tech="Spatial Distance &amp; Collision Trajectory">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 10: Smoke Detection -->
+        <article class="ai-model-card" data-category="safety" data-keywords="smoke detection fire early warning warehouse hangar ceiling medium hard">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#10 • SAFETY</span>
+              <span class="diff-badge diff-medium-hard">Medium–Hard</span>
+            </div>
+            <h3 class="ai-model-title">Smoke Detection</h3>
+            <span class="ai-tech-pill">Volumetric Smoke Pattern Analysis</span>
+            <p class="ai-model-desc">
+              Detect early rising smoke plumes in high-ceiling hangars, lumber warehouses, and recycling facilities minutes before physical ceiling detectors heat up.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">High-Ceiling Optics</span>
+              <span class="ai-deploy-tag">Volumetric Expansion</span>
+              <span class="ai-deploy-tag">SMS / Pager Relay</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Smoke Detection" data-tech="Volumetric Smoke Pattern Analysis">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 11: Fire Detection -->
+        <article class="ai-model-card" data-category="safety" data-keywords="fire detection flame heat infrared scrap yard chemical medium hard">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#11 • SAFETY</span>
+              <span class="diff-badge diff-medium-hard">Medium–Hard</span>
+            </div>
+            <h3 class="ai-model-title">Fire Detection</h3>
+            <span class="ai-tech-pill">Flame Contour &amp; Flicker Frequency</span>
+            <p class="ai-model-desc">
+              Spot visible open flames and explosive flash flare-ups in scrap processing yards, chemical storage, and outdoor depots with zero false alarms from sunlight.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Optical + Thermal</span>
+              <span class="ai-deploy-tag">Flicker Analysis</span>
+              <span class="ai-deploy-tag">Emergency Dispatch</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Fire Detection" data-tech="Flame Contour &amp; Flicker Frequency">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 12: Spill Detection -->
+        <article class="ai-model-card" data-category="safety" data-keywords="spill liquid puddle oil chemical slip hazard slip and fall floor medium hard">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#12 • SAFETY</span>
+              <span class="diff-badge diff-medium-hard">Medium–Hard</span>
+            </div>
+            <h3 class="ai-model-title">Spill Detection</h3>
+            <span class="ai-tech-pill">Liquid Specular Reflection &amp; Puddle Segmentation</span>
+            <p class="ai-model-desc">
+              Identify hazardous oil, solvent, or water puddles spreading across polished warehouse concrete floors before costly slip-and-fall incidents occur.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Surface Specularity</span>
+              <span class="ai-deploy-tag">Slip Prevention</span>
+              <span class="ai-deploy-tag">Cleaning Dispatch</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Spill Detection" data-tech="Liquid Specular Reflection &amp; Puddle Segmentation">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 13: Machine Guard Detection -->
+        <article class="ai-model-card" data-category="safety" data-keywords="machine guard safety cage interlock stamping press blade barrier hard">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#13 • SAFETY</span>
+              <span class="diff-badge diff-hard">Hard</span>
+            </div>
+            <h3 class="ai-model-title">Machine Guard Detection</h3>
+            <span class="ai-tech-pill">Safety Barrier &amp; Cage Interlock Inspection</span>
+            <p class="ai-model-desc">
+              Verify that protective plexiglass doors, metal screens, and interlock cages are physically closed and latched around heavy stamping presses.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Guard Latch Check</span>
+              <span class="ai-deploy-tag">Stamping Presses</span>
+              <span class="ai-deploy-tag">Hardware E-Stop</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-purple); font-weight: 700;">★ Advanced Pipeline</span>
+            <button class="ai-inquire-btn" data-model="Machine Guard Detection" data-tech="Safety Barrier &amp; Cage Interlock Inspection">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 14: Worker Fall Detection -->
+        <article class="ai-model-card" data-category="safety" data-keywords="worker fall detection man down slip collapse immobility emergency hard">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#14 • SAFETY</span>
+              <span class="diff-badge diff-hard">Hard</span>
+            </div>
+            <h3 class="ai-model-title">Worker Fall Detection</h3>
+            <span class="ai-tech-pill">Sudden Trajectory Collapse &amp; Immobility Timer</span>
+            <p class="ai-model-desc">
+              Instantly recognize workers slipping, collapsing, or falling from ladders/platforms, dispatching plant first responders with exact GPS/floor coordinates.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Man-Down Protocol</span>
+              <span class="ai-deploy-tag">Zero Wearable Needed</span>
+              <span class="ai-deploy-tag">Immediate Dispatch</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-purple); font-weight: 700;">★ Advanced Pipeline</span>
+            <button class="ai-inquire-btn" data-model="Worker Fall Detection" data-tech="Sudden Trajectory Collapse &amp; Immobility Timer">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 15: Unsafe Posture Detection -->
+        <article class="ai-model-card" data-category="safety" data-keywords="unsafe posture ergonomics spine back injury lifting reba rula hard">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#15 • SAFETY</span>
+              <span class="diff-badge diff-hard">Hard</span>
+            </div>
+            <h3 class="ai-model-title">Unsafe Posture Detection</h3>
+            <span class="ai-tech-pill">Ergonomic Joint Stress &amp; Spine Curvature</span>
+            <p class="ai-model-desc">
+              Evaluate real-time spinal curvature, rounded lifting, and repetitive strain angles on assembly lines to prevent chronic worker back injuries (REBA/RULA).
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Skeletal Ergonomics</span>
+              <span class="ai-deploy-tag">Repetitive Strain</span>
+              <span class="ai-deploy-tag">OSHA Injury Audit</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-purple); font-weight: 700;">★ Advanced Pipeline</span>
+            <button class="ai-inquire-btn" data-model="Unsafe Posture Detection" data-tech="Ergonomic Joint Stress &amp; Spine Curvature">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 16: Crowd Density Estimation -->
+        <article class="ai-model-card" data-category="safety" data-keywords="crowd density estimation evacuation bottleneck overcrowding exits medium hard">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#16 • SAFETY</span>
+              <span class="diff-badge diff-medium-hard">Medium–Hard</span>
+            </div>
+            <h3 class="ai-model-title">Crowd Density Estimation</h3>
+            <span class="ai-tech-pill">Headcount Heatmaps &amp; Bottleneck Analysis</span>
+            <p class="ai-model-desc">
+              Monitor factory shift transitions, turnstiles, and emergency escape stairwells to prevent dangerous overcrowding and stampede risks during evacuations.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Evacuation Routing</span>
+              <span class="ai-deploy-tag">Density Thresholds</span>
+              <span class="ai-deploy-tag">Live Floor Heatmap</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Crowd Density Estimation" data-tech="Headcount Heatmaps &amp; Bottleneck Analysis">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 17: Vehicle Movement Tracking -->
+        <article class="ai-model-card" data-category="safety" data-keywords="vehicle movement tracking agv forklift speed lane enforcement medium hard">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#17 • SAFETY</span>
+              <span class="diff-badge diff-medium-hard">Medium–Hard</span>
+            </div>
+            <h3 class="ai-model-title">Vehicle Movement Tracking</h3>
+            <span class="ai-tech-pill">Industrial Vehicle Velocity &amp; Lane Adherence</span>
+            <p class="ai-model-desc">
+              Track automated guided vehicles (AGVs), reach trucks, and tuggers to enforce indoor speed limits, monitor reverse maneuvering, and flag aisle traffic jams.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Indoor Velocity OCR</span>
+              <span class="ai-deploy-tag">Speed Enforcer</span>
+              <span class="ai-deploy-tag">Fleet Telematics</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Vehicle Movement Tracking" data-tech="Industrial Vehicle Velocity &amp; Lane Adherence">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 18: Surface Defect Detection -->
+        <article class="ai-model-card" data-category="safety" data-keywords="defect detection crack scratch surface micro quality assurance medium hard">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#18 • QA &amp; Defects</span>
+              <span class="diff-badge diff-medium-hard">Medium–Hard</span>
+            </div>
+            <h3 class="ai-model-title">Surface Defect Detection</h3>
+            <span class="ai-tech-pill">Micro Anomaly Segmentation</span>
+            <p class="ai-model-desc">
+              Detect hairline cracks, surface pores, scratches, and weld discontinuities on extruded aluminum, stamped parts, and glass bottles at conveyor speed.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Line-Scan Camera</span>
+              <span class="ai-deploy-tag">Micron Resolution</span>
+              <span class="ai-deploy-tag">Automated Reject Bin</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Surface Defect Detection" data-tech="Micro Anomaly Segmentation">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 19: Gauge and Meter Reading -->
+        <article class="ai-model-card" data-category="safety" data-keywords="gauge meter analog reading dial needle pressure temperature scada medium hard">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#19 • IoT Gauges</span>
+              <span class="diff-badge diff-medium-hard">Medium–Hard</span>
+            </div>
+            <h3 class="ai-model-title">Gauge &amp; Meter Reading</h3>
+            <span class="ai-tech-pill">Analog Needle Angle &amp; 7-Segment OCR</span>
+            <p class="ai-model-desc">
+              Digitize legacy analog boiler pressure gauges, temperature dials, and oil level sight-glasses without replacing expensive mechanical plant hardware.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Retrofit Camera</span>
+              <span class="ai-deploy-tag">Angle Math</span>
+              <span class="ai-deploy-tag">MQTT / SCADA Export</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Gauge and Meter Reading" data-tech="Analog Needle Angle &amp; 7-Segment OCR">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 20: Barcode & Label Reading -->
+        <article class="ai-model-card" data-category="safety" data-keywords="barcode label reading pallet equipment tracking logistics easy medium">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#20 • Barcodes</span>
+              <span class="diff-badge diff-easy">Easy–Medium</span>
+            </div>
+            <h3 class="ai-model-title">Barcode &amp; Label Reading</h3>
+            <span class="ai-tech-pill">High-Speed Omnidirectional Multi-Code OCR</span>
+            <p class="ai-model-desc">
+              Scan multiple 1D barcodes, 2D QR matrixes, and safety compliance labels simultaneously on high-speed warehouse rollers even when partially damaged.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Omnidirectional</span>
+              <span class="ai-deploy-tag">Conveyor Speeds</span>
+              <span class="ai-deploy-tag">ERP Inventory Sync</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Barcode and Label Reading" data-tech="High-Speed Omnidirectional Multi-Code OCR">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         SECTION 2: COMPUTER VISION & SPATIAL INTELLIGENCE (10 Models)
+         ======================================================================== -->
+    <section class="ai-category-section" id="spatial-vision" data-category-group="spatial">
+      <div class="ai-cat-section-header">
+        <div class="ai-cat-title-group">
+          <div class="badge-pill" style="background: #eff6ff; color: #2563eb; border: 1.5px solid #bfdbfe; margin-bottom: 8px;">
+            <span>PILLAR 02 • SPATIAL INTELLIGENCE &amp; COUNTING</span>
+          </div>
+          <h2>Spatial Intelligence, Counting &amp; Real Estate Vision</h2>
+          <p>
+            Computer vision engines that quantify the real physical world: counting shelf inventory, estimating package volumes, mapping store traffic, and detecting property defects.
+          </p>
+        </div>
+        <div class="ai-count-tag" style="background: #eff6ff; color: #2563eb; border-color: #bfdbfe;">
+          10 Models
+        </div>
+      </div>
+
+      <div class="ai-models-grid">
+        <!-- Model 21: Automated Inventory Counting -->
+        <article class="ai-model-card" data-category="spatial" data-keywords="automated inventory counting stocktake shelf warehouse object detection counting">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#21 • Inventory</span>
+              <span class="diff-badge diff-medium">Detection + Count</span>
+            </div>
+            <h3 class="ai-model-title">Automated Inventory Counting</h3>
+            <span class="ai-tech-pill">Object Detection + Counting</span>
+            <p class="ai-model-desc">
+              Instant shelf stocktake and pallet crate count from overhead security cameras or worker mobile snapshots. Eliminates manual stocktake hours.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Overhead Cameras</span>
+              <span class="ai-deploy-tag">Mobile App SDK</span>
+              <span class="ai-deploy-tag">WMS Sync</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Automated Inventory Counting" data-tech="Object Detection + Counting">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 22: Competitor Product Intelligence -->
+        <article class="ai-model-card" data-category="spatial" data-keywords="competitor product intelligence image matching catalog crawler price">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#22 • Commerce</span>
+              <span class="diff-badge diff-medium">Image Matching</span>
+            </div>
+            <h3 class="ai-model-title">Competitor Product Intelligence</h3>
+            <span class="ai-tech-pill">Image Matching + Catalog Data</span>
+            <p class="ai-model-desc">
+              Visual web-crawler that detects identical products on rival storefronts and marketplaces, monitoring pricing shifts and stock availability automatically.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Automated Crawler</span>
+              <span class="ai-deploy-tag">Catalog Match</span>
+              <span class="ai-deploy-tag">Price Alert API</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Competitor Product Intelligence" data-tech="Image Matching + Catalog Data">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 23: Visual Quality Checker -->
+        <article class="ai-model-card" data-category="spatial" data-keywords="visual quality checker defect classification manufacturing assembly belt">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#23 • Inspection</span>
+              <span class="diff-badge diff-medium-hard">Defect Classifier</span>
+            </div>
+            <h3 class="ai-model-title">Visual Quality Checker</h3>
+            <span class="ai-tech-pill">Defect Classification</span>
+            <p class="ai-model-desc">
+              High-speed conveyor quality inspection spotting surface anomalies, label misalignment, container dents, and packaging flaws on production belts.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Conveyor Cam</span>
+              <span class="ai-deploy-tag">Edge Inference</span>
+              <span class="ai-deploy-tag">Flaw Classifier</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Visual Quality Checker" data-tech="Defect Classification">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 24: Store Footfall Analytics -->
+        <article class="ai-model-card" data-category="spatial" data-keywords="store footfall analytics person detection tracking retail heatmaps">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#24 • Retail</span>
+              <span class="diff-badge diff-medium">Person Tracking</span>
+            </div>
+            <h3 class="ai-model-title">Store Footfall Analytics</h3>
+            <span class="ai-tech-pill">Person Detection + Tracking</span>
+            <p class="ai-model-desc">
+              Measure customer dwell time, aisle heatmaps, and peak store entry hours in physical retail stores anonymously without capturing facial biometric data.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">CCTV Integration</span>
+              <span class="ai-deploy-tag">Live Heatmap</span>
+              <span class="ai-deploy-tag">Privacy Compliant</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Store Footfall Analytics" data-tech="Person Detection + Tracking">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 25: Virtual Renovation Preview -->
+        <article class="ai-model-card" data-category="spatial" data-keywords="virtual renovation preview segmentation image generation room flooring paint">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#25 • Real Estate</span>
+              <span class="diff-badge diff-hard">Generative Vision</span>
+            </div>
+            <h3 class="ai-model-title">Virtual Renovation Preview</h3>
+            <span class="ai-tech-pill">Segmentation + Image Generation</span>
+            <p class="ai-model-desc">
+              Allow remodeling clients to visualize photorealistic wall colors, hardwood flooring, and cabinetry replacements directly on actual photos of their rooms.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Interactive Web</span>
+              <span class="ai-deploy-tag">Diffusion Model</span>
+              <span class="ai-deploy-tag">Contractor Portal</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-purple); font-weight: 700;">★ Advanced Pipeline</span>
+            <button class="ai-inquire-btn" data-model="Virtual Renovation Preview" data-tech="Segmentation + Image Generation">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 26: Property Condition Inspection -->
+        <article class="ai-model-card" data-category="spatial" data-keywords="property condition inspection image analysis reporting tenant damages">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#26 • Property</span>
+              <span class="diff-badge diff-medium">Image Analysis</span>
+            </div>
+            <h3 class="ai-model-title">Property Condition Inspection</h3>
+            <span class="ai-tech-pill">Image Analysis + Reporting</span>
+            <p class="ai-model-desc">
+              Automatic grading of tenant move-in and move-out photos to identify drywall holes, carpet stains, and broken fixtures for fast security deposit audits.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Mobile Upload</span>
+              <span class="ai-deploy-tag">Automated PDF</span>
+              <span class="ai-deploy-tag">PMS Integration</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Property Condition Inspection" data-tech="Image Analysis + Reporting">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 27: Parking Space Detection -->
+        <article class="ai-model-card" data-category="spatial" data-keywords="parking space detection classification open occupied garage lot">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#27 • Parking</span>
+              <span class="diff-badge diff-medium">Space Classifier</span>
+            </div>
+            <h3 class="ai-model-title">Parking Space Detection</h3>
+            <span class="ai-tech-pill">Parking-Space Classification</span>
+            <p class="ai-model-desc">
+              Real-time open vs occupied parking guidance mapping using standard overhead parking garage cameras, feeding live occupancy displays and driver apps.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">CCTV Camera</span>
+              <span class="ai-deploy-tag">LED Sign API</span>
+              <span class="ai-deploy-tag">Edge Jetson</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Parking Space Detection" data-tech="Parking-Space Classification">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 28: Property Listing Duplicate Detector -->
+        <article class="ai-model-card" data-category="spatial" data-keywords="property listing duplicate detector image embeddings duplicate matching mls">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#28 • MLS Match</span>
+              <span class="diff-badge diff-medium">Embeddings</span>
+            </div>
+            <h3 class="ai-model-title">Property Listing Duplicate Detector</h3>
+            <span class="ai-tech-pill">Image Embeddings + Duplicate Matching</span>
+            <p class="ai-model-desc">
+              Flag duplicate, re-uploaded, or stolen property listings across real estate portals using high-dimensional visual feature matching.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Vector DB</span>
+              <span class="ai-deploy-tag">Duplicate Match</span>
+              <span class="ai-deploy-tag">Portal Webhook</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Property Listing Duplicate Detector" data-tech="Image Embeddings + Duplicate Matching">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 29: Physiotherapy Pose Tracker -->
+        <article class="ai-model-card" data-category="spatial" data-keywords="physiotherapy pose tracker pose estimation movement analysis rehab exercise">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#29 • Health</span>
+              <span class="diff-badge diff-hard">Pose Tracking</span>
+            </div>
+            <h3 class="ai-model-title">Physiotherapy Pose Tracker</h3>
+            <span class="ai-tech-pill">Pose Estimation + Movement Analysis</span>
+            <p class="ai-model-desc">
+              Real-time 33-point skeletal joint tracking and repetition counting through patient webcams for home rehabilitation exercise verification.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Browser WebCam</span>
+              <span class="ai-deploy-tag">Joint Angles</span>
+              <span class="ai-deploy-tag">HIPAA Compliant</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-purple); font-weight: 700;">★ Advanced Pipeline</span>
+            <button class="ai-inquire-btn" data-model="Physiotherapy Pose Tracker" data-tech="Pose Estimation + Movement Analysis">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 30: Package Dimension Estimator -->
+        <article class="ai-model-card" data-category="spatial" data-keywords="package dimension estimator box volume courier freight 3d bounding">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#30 • Logistics</span>
+              <span class="diff-badge diff-medium-hard">3D Bounding</span>
+            </div>
+            <h3 class="ai-model-title">Package Dimension Estimator</h3>
+            <span class="ai-tech-pill">3D Bounding Box + Volume Estimation</span>
+            <p class="ai-model-desc">
+              Estimate parcel length, width, height, and cubic volume instantly from standard mobile photos to automate freight billing and avoid disputes.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Smartphone Cam</span>
+              <span class="ai-deploy-tag">Freight API</span>
+              <span class="ai-deploy-tag">Sub-Centimeter Math</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Package Dimension Estimator" data-tech="3D Bounding Box + Volume Estimation">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         SECTION 3: PERCEPTION, SEARCH & PHYSICAL OCR (10 Models)
+         ======================================================================== -->
+    <section class="ai-category-section" id="perception-search" data-category-group="perception">
+      <div class="ai-cat-section-header">
+        <div class="ai-cat-title-group">
+          <div class="badge-pill" style="background: #f5f3ff; color: #7c3aed; border: 1.5px solid #ddd6fe; margin-bottom: 8px;">
+            <span>PILLAR 03 • PERCEPTION, SEARCH &amp; RECOGNITION</span>
+          </div>
+          <h2>Perception, Visual Search &amp; Physical OCR</h2>
+          <p>
+            Vision-language and perception models that read physical signage, recognize license plates, digitize architectural floor plans, and enable snap-to-search e-commerce.
+          </p>
+        </div>
+        <div class="ai-count-tag" style="background: #f5f3ff; color: #7c3aed; border-color: #ddd6fe;">
+          10 Models
+        </div>
+      </div>
+
+      <div class="ai-models-grid">
+        <!-- Model 31: Visual Product Search -->
+        <article class="ai-model-card" data-category="perception" data-keywords="visual product search image embeddings similarity e-commerce catalog">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#31 • Search</span>
+              <span class="diff-badge diff-medium">Similarity Search</span>
+            </div>
+            <h3 class="ai-model-title">Visual Product Search</h3>
+            <span class="ai-tech-pill">Image Embeddings + Similarity Search</span>
+            <p class="ai-model-desc">
+              Customers snap a picture or upload an Instagram screenshot to instantly surface identical and visually matching inventory in your product catalog.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Vector Search</span>
+              <span class="ai-deploy-tag">Storefront Widget</span>
+              <span class="ai-deploy-tag">Zero Tagging Needed</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Visual Product Search" data-tech="Image Embeddings + Similarity Search">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 32: Price Tag Reader -->
+        <article class="ai-model-card" data-category="perception" data-keywords="price tag reader ocr price validation shelf retail mislabeled">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#32 • Price Tag</span>
+              <span class="diff-badge diff-medium">OCR + Validation</span>
+            </div>
+            <h3 class="ai-model-title">Price Tag Reader</h3>
+            <span class="ai-tech-pill">OCR + Price Validation</span>
+            <p class="ai-model-desc">
+              Scan retail shelf price tags with handheld mobile devices to automatically flag promotional discrepancies, missing tags, and outdated pricing.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Mobile Camera</span>
+              <span class="ai-deploy-tag">POS Price Sync</span>
+              <span class="ai-deploy-tag">Shelf Auditing</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Price Tag Reader" data-tech="OCR + Price Validation">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 33: Property Photo Quality Scorer -->
+        <article class="ai-model-card" data-category="perception" data-keywords="property photo quality scorer classification real estate lighting blur">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#33 • Photo QA</span>
+              <span class="diff-badge diff-easy">Quality Metric</span>
+            </div>
+            <h3 class="ai-model-title">Property Photo Quality Scorer</h3>
+            <span class="ai-tech-pill">Image Quality Metrics + Classification</span>
+            <p class="ai-model-desc">
+              Automatically evaluate brightness, sharpness, wide-angle distortion, and room clutter in real estate photos before listings go live.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Automated Scoring</span>
+              <span class="ai-deploy-tag">Listing Gatekeeper</span>
+              <span class="ai-deploy-tag">REST API</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Property Photo Quality Scorer" data-tech="Image Quality Metrics + Classification">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 34: Floor Plan Digitizer -->
+        <article class="ai-model-card" data-category="perception" data-keywords="floor plan digitizer document parsing image segmentation blueprint cad">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#34 • Blueprint</span>
+              <span class="diff-badge diff-medium-hard">Plan Segmentation</span>
+            </div>
+            <h3 class="ai-model-title">Floor Plan Digitizer (Basic Version)</h3>
+            <span class="ai-tech-pill">Document Parsing + Image Segmentation</span>
+            <p class="ai-model-desc">
+              Convert 2D paper blueprints and sketched architect floor plans into clean vector walls, door swings, and structured room square footage tables.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Vector SVG Export</span>
+              <span class="ai-deploy-tag">Dimension Parser</span>
+              <span class="ai-deploy-tag">Architecture Web</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Floor Plan Digitizer" data-tech="Document Parsing + Image Segmentation">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 35: Pill Packaging Reader -->
+        <article class="ai-model-card" data-category="perception" data-keywords="pill packaging reader ocr label extraction pharma expiry blister">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#35 • Pharma</span>
+              <span class="diff-badge diff-medium-hard">Blister OCR</span>
+            </div>
+            <h3 class="ai-model-title">Pill Packaging Reader</h3>
+            <span class="ai-tech-pill">OCR + Label Extraction</span>
+            <p class="ai-model-desc">
+              Accurately read small dosage instructions, expiration dates, and lot numbers stamped onto reflective pharmaceutical blister foils and medicine boxes.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Macro Camera</span>
+              <span class="ai-deploy-tag">Reflective Foil OCR</span>
+              <span class="ai-deploy-tag">Pharma Verification</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Pill Packaging Reader" data-tech="OCR + Label Extraction">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 36: Accessibility Scene Reader -->
+        <article class="ai-model-card" data-category="perception" data-keywords="accessibility scene reader vision language model speech audio visually impaired">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#36 • Assistive</span>
+              <span class="diff-badge diff-hard">Vision-Language</span>
+            </div>
+            <h3 class="ai-model-title">Accessibility Scene Reader</h3>
+            <span class="ai-tech-pill">Vision-Language Model + Speech Output</span>
+            <p class="ai-model-desc">
+              Speak real-time natural language descriptions of surroundings, obstacles, transit signs, and restaurant menus for visually impaired users.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">VLM + TTS Voice</span>
+              <span class="ai-deploy-tag">Mobile App</span>
+              <span class="ai-deploy-tag">Edge Quantized</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-purple); font-weight: 700;">★ Advanced Pipeline</span>
+            <button class="ai-inquire-btn" data-model="Accessibility Scene Reader" data-tech="Vision-Language Model + Speech Output">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 37: Assembly Verification -->
+        <article class="ai-model-card" data-category="perception" data-keywords="assembly verification reference image comparison manufacturing components">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#37 • Assembly</span>
+              <span class="diff-badge diff-medium">Comparison</span>
+            </div>
+            <h3 class="ai-model-title">Assembly Verification (Basic Version)</h3>
+            <span class="ai-tech-pill">Reference Image Comparison</span>
+            <p class="ai-model-desc">
+              Validate that all screws, internal cables, and brackets are seated correctly against a golden master photo before an electronic device is closed.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Assembly Bench Cam</span>
+              <span class="ai-deploy-tag">Pass/Fail Indicator</span>
+              <span class="ai-deploy-tag">Sub-Second Check</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Assembly Verification" data-tech="Reference Image Comparison">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 38: License Plate Recognition -->
+        <article class="ai-model-card" data-category="perception" data-keywords="license plate recognition alpr vehicle detection plate ocr gate toll">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#38 • ALPR Gate</span>
+              <span class="diff-badge diff-medium-hard">Vehicle + Plate</span>
+            </div>
+            <h3 class="ai-model-title">License Plate Recognition (ALPR)</h3>
+            <span class="ai-tech-pill">Vehicle Detection + Plate OCR</span>
+            <p class="ai-model-desc">
+              High-accuracy vehicle license plate recognition for gated communities, toll plazas, drive-thru order lanes, and fleet parking barrier gates.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">99.4% Accuracy</span>
+              <span class="ai-deploy-tag">High-Speed Shutter</span>
+              <span class="ai-deploy-tag">Barrier Relay</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="License Plate Recognition" data-tech="Vehicle Detection + Plate OCR">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 39: Brand Logo Monitor -->
+        <article class="ai-model-card" data-category="perception" data-keywords="brand logo monitor logo detection image matching sponsor stream media">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#39 • Brand</span>
+              <span class="diff-badge diff-medium">Logo Matcher</span>
+            </div>
+            <h3 class="ai-model-title">Brand Logo Monitor</h3>
+            <span class="ai-tech-pill">Logo Detection + Image Matching</span>
+            <p class="ai-model-desc">
+              Scan live sports video broadcasts, video streams, and social posts to compute brand impression seconds and detect counterfeit brand merchandise.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Video Stream Processor</span>
+              <span class="ai-deploy-tag">Sponsor Analytics</span>
+              <span class="ai-deploy-tag">Infringement Alerts</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Brand Logo Monitor" data-tech="Logo Detection + Image Matching">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 40: Smart Waste Bin Monitor -->
+        <article class="ai-model-card" data-category="perception" data-keywords="smart waste bin monitor image classification fill level municipal garbage">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#40 • Waste IoT</span>
+              <span class="diff-badge diff-easy">Fill Estimator</span>
+            </div>
+            <h3 class="ai-model-title">Smart Waste Bin Monitor (Basic Version)</h3>
+            <span class="ai-tech-pill">Image Classification / Fill-Level Estimation</span>
+            <p class="ai-model-desc">
+              Camera-based dumpster fullness detection to optimize municipal and commercial garbage collection truck routes, preventing messy overflows.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Battery IoT Camera</span>
+              <span class="ai-deploy-tag">Route Optimization</span>
+              <span class="ai-deploy-tag">Fill Percentage</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Smart Waste Bin Monitor" data-tech="Image Classification / Fill-Level Estimation">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         SECTION 4: DOCUMENT AI & WORKFLOW ENGINES (10 Models)
+         ======================================================================== -->
+    <section class="ai-category-section" id="document-ai" data-category-group="document">
+      <div class="ai-cat-section-header">
+        <div class="ai-cat-title-group">
+          <div class="badge-pill" style="background: #ecfdf5; color: #059669; border: 1.5px solid #a7f3d0; margin-bottom: 8px;">
+            <span>PILLAR 04 • DOCUMENT INTELLIGENCE &amp; AUTOMATION</span>
+          </div>
+          <h2>Document AI, Invoices &amp; Workflow Engines</h2>
+          <p>
+            Turn messy paper invoices, lab test reports, handwritten intake clipboards, and customs shipping slips into pristine, validated JSON records that sync with your ERP.
+          </p>
+        </div>
+        <div class="ai-count-tag" style="background: #ecfdf5; color: #059669; border-color: #a7f3d0;">
+          10 Models
+        </div>
+      </div>
+
+      <div class="ai-models-grid">
+        <!-- Model 41: AI Product Photographer -->
+        <article class="ai-model-card" data-category="document" data-keywords="ai product photographer background removal shadow lighting e-commerce studio">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#41 • E-Commerce</span>
+              <span class="diff-badge diff-easy">Background &amp; Studio</span>
+            </div>
+            <h3 class="ai-model-title">AI Product Photographer</h3>
+            <span class="ai-tech-pill">Background-Removal API + Scene Lighting</span>
+            <p class="ai-model-desc">
+              Transform raw warehouse snapshots into studio-grade e-commerce hero photos with realistic contact shadows on clean pure white or lifestyle backdrops.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Bulk Image Pipeline</span>
+              <span class="ai-deploy-tag">Contact Shadows</span>
+              <span class="ai-deploy-tag">Shopify Sync</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="AI Product Photographer" data-tech="Background-Removal API + Scene Lighting">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 42: Receipt Expense Automation -->
+        <article class="ai-model-card" data-category="document" data-keywords="receipt expense automation ocr field extraction accounting tax vat">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#42 • Finance</span>
+              <span class="diff-badge diff-medium">Receipt OCR</span>
+            </div>
+            <h3 class="ai-model-title">Receipt Expense Automation</h3>
+            <span class="ai-tech-pill">OCR + Field Extraction</span>
+            <p class="ai-model-desc">
+              Extract merchant name, total, transaction date, VAT, and line items directly from thermal and crumpled receipts into bookkeeping spreadsheets.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Thermal Paper OCR</span>
+              <span class="ai-deploy-tag">Line-Item Parser</span>
+              <span class="ai-deploy-tag">QuickBooks Export</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Receipt Expense Automation" data-tech="OCR + Field Extraction">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 43: AI Property Listing Creator -->
+        <article class="ai-model-card" data-category="document" data-keywords="ai property listing creator vision api text generation mls real estate">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#43 • Real Estate</span>
+              <span class="diff-badge diff-medium">Vision + Text Gen</span>
+            </div>
+            <h3 class="ai-model-title">AI Property Listing Creator</h3>
+            <span class="ai-tech-pill">Vision API + Text Generation</span>
+            <p class="ai-model-desc">
+              Automatically generate compelling, MLS-compliant property marketing copy and feature highlights from a simple bundle of 5 to 10 home photos.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Vision-to-Copy</span>
+              <span class="ai-deploy-tag">MLS Integration</span>
+              <span class="ai-deploy-tag">Realtor Web App</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="AI Property Listing Creator" data-tech="Vision API + Text Generation">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 44: Medical Document Digitizer -->
+        <article class="ai-model-card" data-category="document" data-keywords="medical document digitizer ocr structured output fhir emr clinic records">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#44 • Health Records</span>
+              <span class="diff-badge diff-medium-hard">Medical OCR</span>
+            </div>
+            <h3 class="ai-model-title">Medical Document Digitizer</h3>
+            <span class="ai-tech-pill">OCR + Structured Output</span>
+            <p class="ai-model-desc">
+              Transcribe physician handwriting, clinical intake sheets, and patient consent forms into structured, encrypted FHIR/JSON electronic health records.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">HIPAA Encryption</span>
+              <span class="ai-deploy-tag">Handwriting Parser</span>
+              <span class="ai-deploy-tag">EMR Direct API</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Medical Document Digitizer" data-tech="OCR + Structured Output">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 45: Lab Report Scanner -->
+        <article class="ai-model-card" data-category="document" data-keywords="lab report scanner ocr table extraction pathology blood diagnostic">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#45 • Clinical Lab</span>
+              <span class="diff-badge diff-medium-hard">Table Extraction</span>
+            </div>
+            <h3 class="ai-model-title">Lab Report Scanner</h3>
+            <span class="ai-tech-pill">OCR + Table Extraction</span>
+            <p class="ai-model-desc">
+              Parse multi-page diagnostic blood panels and pathology tables, flagging out-of-range biomarkers against normal physiological reference limits.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Multi-Column Tables</span>
+              <span class="ai-deploy-tag">Reference Range Tag</span>
+              <span class="ai-deploy-tag">Diagnostic Sync</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Lab Report Scanner" data-tech="OCR + Table Extraction">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 46: Shipping Label Reader -->
+        <article class="ai-model-card" data-category="document" data-keywords="shipping label reader ocr barcode parcel courier address tracking">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#46 • Logistics</span>
+              <span class="diff-badge diff-easy">Label Parser</span>
+            </div>
+            <h3 class="ai-model-title">Shipping Label Reader</h3>
+            <span class="ai-tech-pill">OCR + Barcode API</span>
+            <p class="ai-model-desc">
+              Read 1D/2D barcodes, sender/recipient addresses, and zip codes from creased, plastic-wrapped, or damaged courier parcel labels at high speed.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">High Speed Scan</span>
+              <span class="ai-deploy-tag">Address Parser</span>
+              <span class="ai-deploy-tag">WMS Inbound Hook</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Shipping Label Reader" data-tech="OCR + Barcode API">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 47: Business Card Scanner -->
+        <article class="ai-model-card" data-category="document" data-keywords="business card scanner ocr contact extraction crm hubspot salesforce">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#47 • CRM Leads</span>
+              <span class="diff-badge diff-easy">Contact OCR</span>
+            </div>
+            <h3 class="ai-model-title">Business Card Scanner</h3>
+            <span class="ai-tech-pill">OCR + Contact Extraction</span>
+            <p class="ai-model-desc">
+              Snap photos of paper cards at trade conferences to auto-populate contact names, phone numbers, verified corporate emails, and roles into CRM.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">vCard Export</span>
+              <span class="ai-deploy-tag">HubSpot / Salesforce</span>
+              <span class="ai-deploy-tag">Email Validation</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Business Card Scanner" data-tech="OCR + Contact Extraction">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 48: Automated Form Processor -->
+        <article class="ai-model-card" data-category="document" data-keywords="automated form processor document classification ocr claims applications">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#48 • Enterprise Forms</span>
+              <span class="diff-badge diff-medium">Classifier + OCR</span>
+            </div>
+            <h3 class="ai-model-title">Automated Form Processor</h3>
+            <span class="ai-tech-pill">Document Classification + OCR</span>
+            <p class="ai-model-desc">
+              Classify and extract key-value data fields from insurance claim forms, tax schedules, and government applications with sub-second accuracy.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Key-Value Pairs</span>
+              <span class="ai-deploy-tag">Confidence Score</span>
+              <span class="ai-deploy-tag">RPA Integration</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Automated Form Processor" data-tech="Document Classification + OCR">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 49: Invoice-to-Accounting Assistant -->
+        <article class="ai-model-card" data-category="document" data-keywords="invoice to accounting assistant ocr accounting quickbooks xero tally po">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#49 • ERP Ledger</span>
+              <span class="diff-badge diff-medium-hard">3-Way PO Matching</span>
+            </div>
+            <h3 class="ai-model-title">Invoice-to-Accounting Assistant</h3>
+            <span class="ai-tech-pill">OCR + Accounting Integration</span>
+            <p class="ai-model-desc">
+              Reconcile supplier PDF invoices against open Purchase Orders and automatically draft balanced ledger entries in QuickBooks, Xero, or Tally.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">3-Way PO Match</span>
+              <span class="ai-deploy-tag">QuickBooks / Xero</span>
+              <span class="ai-deploy-tag">Zero Manual Entry</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Invoice-to-Accounting Assistant" data-tech="OCR + Accounting Integration">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Model 50: Queue Length Estimator -->
+        <article class="ai-model-card" data-category="document" data-keywords="queue length estimator person detection uploaded images wait time counter">
+          <div>
+            <div class="ai-card-meta-top">
+              <span class="ai-model-num">#50 • Operations</span>
+              <span class="diff-badge diff-easy">Headcount Estimator</span>
+            </div>
+            <h3 class="ai-model-title">Queue Length Estimator (Basic Prototype)</h3>
+            <span class="ai-tech-pill">Person Detection on Uploaded Images</span>
+            <p class="ai-model-desc">
+              Estimate customer wait times and counter line headcount from security camera snapshots to automatically notify managers when queues bottleneck.
+            </p>
+            <div class="ai-deploy-row">
+              <span class="ai-deploy-tag">Counter Cam</span>
+              <span class="ai-deploy-tag">Wait-Time Math</span>
+              <span class="ai-deploy-tag">Staff Alert System</span>
+            </div>
+          </div>
+          <div class="ai-model-footer">
+            <span style="font-size: 0.76rem; color: var(--pop-emerald); font-weight: 700;">✓ Production Ready</span>
+            <button class="ai-inquire-btn" data-model="Queue Length Estimator" data-tech="Person Detection on Uploaded Images">
+              <span>Deploy Model →</span>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         AI FEASIBILITY & ARCHITECTURE INTAKE SECTION
+         ======================================================================== -->
+    <section class="ai-redirect-banner" id="ai-consultation" style="margin-top: 60px; background: #ffffff;">
+      <div style="flex: 1 1 500px;">
+        <div class="badge-pill badge-purple" style="margin-bottom: 10px;">
+          <span>FREE TECHNICAL FEASIBILITY AUDIT</span>
+        </div>
+        <h2 style="font-size: 1.85rem; margin-bottom: 10px;">Have a Custom Camera Feed, Drone Stream, or Proprietary Dataset?</h2>
+        <p style="color: var(--ink-muted); font-size: 0.96rem; line-height: 1.6; max-width: 650px;">
+          Tell us about your physical facility, camera specifications, lighting conditions, and target latency. Our computer vision engineering team will evaluate technical feasibility within 24 hours.
+        </p>
+        <div style="display: flex; gap: 20px; align-items: center; margin-top: 20px; flex-wrap: wrap;">
+          <div style="font-size: 0.88rem; font-weight: 700; color: var(--ink-black); display: flex; align-items: center; gap: 6px;">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" style="color: var(--pop-emerald);"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>RTSP &amp; ONVIF Compatible</span>
+          </div>
+          <div style="font-size: 0.88rem; font-weight: 700; color: var(--ink-black); display: flex; align-items: center; gap: 6px;">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" style="color: var(--pop-emerald);"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>On-Premise / Edge / Cloud</span>
+          </div>
+          <div style="font-size: 0.88rem; font-weight: 700; color: var(--ink-black); display: flex; align-items: center; gap: 6px;">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" style="color: var(--pop-emerald);"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>100% Client IP Ownership</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ai-banner-actions" style="flex-direction: column; align-items: stretch; width: 320px;">
+        <a class="btn btn-primary" href="https://wa.me/917021354835?text=Hi%20Satyam%2C%20I%20want%20to%20discuss%20a%20custom%20Computer%20Vision%20model" target="_blank" rel="noopener" style="justify-content: center; padding: 14px 20px;">
+          <span>Chat on WhatsApp Directly</span>
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a class="btn btn-secondary" href="mailto:contact@alphasonicsolution.com?subject=AI%20Vision%20Model%20Inquiry" style="justify-content: center;">
+          <span>Email Engineering Team</span>
+        </a>
+        <a class="btn btn-secondary" href="index.html#contact" style="justify-content: center; font-size: 0.82rem;">
+          <span>Open Full Intake Form</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       QUICK MODEL DEPLOYMENT INQUIRY MODAL
+       ======================================================================== -->
+  <div class="ai-modal-overlay" id="ai-modal">
+    <div class="ai-modal-box">
+      <button class="ai-modal-close" id="ai-modal-close" aria-label="Close modal">✕</button>
+
+      <div class="badge-pill badge-purple" style="margin-bottom: 12px;">
+        <span>MODEL ARCHITECTURE INQUIRY</span>
+      </div>
+
+      <h3 style="font-size: 1.4rem; margin-bottom: 6px;" id="modal-model-title">Model Title</h3>
+      <p style="font-family: 'JetBrains Mono', monospace; font-size: 0.82rem; color: var(--pop-purple); margin-bottom: 16px;" id="modal-model-tech">Architecture</p>
+
+      <p style="font-size: 0.9rem; color: var(--ink-muted); margin-bottom: 20px;">
+        Request a benchmark report, sample inference video, or custom dataset training quotation for this vision model.
+      </p>
+
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <a id="modal-whatsapp-link" class="btn btn-primary" href="#" target="_blank" rel="noopener" style="justify-content: center; padding: 12px 18px;">
+          <span>Chat with AI Lead on WhatsApp</span>
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a id="modal-email-link" class="btn btn-secondary" href="#" style="justify-content: center;">
+          <span>Send Technical Email Inquiry</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="nav-brand" style="margin-bottom: 12px;">
+            <img src="mainlogo.png" alt="Alphasonic Solution Logo" class="brand-logo-img" />
+            <span class="brand-title">Alphasonic<span class="brand-dot">.</span> <span style="font-size: 0.82rem; font-weight: 700; color: var(--pop-purple);">AI Labs</span></span>
+          </div>
+          <p class="footer-desc">
+            Empowering independent enterprises, manufacturers, contractors, and local businesses with custom computer vision and high-impact digital engineering.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>AI Pillars</h5>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#industrial-safety">Workplace Safety &amp; PPE (20)</a></li>
+            <li><a class="footer-link" href="#spatial-vision">Spatial Vision &amp; Counting (10)</a></li>
+            <li><a class="footer-link" href="#perception-search">Visual Search &amp; OCR (10)</a></li>
+            <li><a class="footer-link" href="#document-ai">Document AI &amp; Invoices (10)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Alphasonic Core</h5>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="index.html#services">Web &amp; E-Commerce</a></li>
+            <li><a class="footer-link" href="index.html#services">Google Maps &amp; SEO</a></li>
+            <li><a class="footer-link" href="index.html#services">Smart Automations</a></li>
+            <li><a class="footer-link" href="index.html#testimonials">10 Client Reviews</a></li>
+            <li><a class="footer-link" href="index.html#contact">Intake &amp; Advisory</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Direct Contact</h5>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="mailto:contact@alphasonicsolution.com">contact@alphasonicsolution.com</a></li>
+            <li><a class="footer-link" href="https://wa.me/917021354835">+91 70213 54835 (IST)</a></li>
+            <li style="color: var(--ink-muted); font-size: 0.85rem; margin-top: 4px;">Available Monday – Saturday</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Alphasonic Solution. All rights reserved. Applied AI &amp; Computer Vision Engineering.
+        </div>
+        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+          <a href="#" class="footer-link">Back to Top ↑</a>
+          <a href="index.html" class="footer-link">Home Page</a>
+          <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+          <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       AI SERVICES PAGE INTERACTIVE CONTROLLER SCRIPT
+       ======================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Audio Synthesizer for tactile feedback
+      let audioCtx = null;
+      let soundEnabled = false;
+
+      const initAudio = () => {
+        if (!audioCtx) {
+          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          if (AudioContext) audioCtx = new AudioContext();
+        }
+        if (audioCtx && audioCtx.state === 'suspended') {
+          audioCtx.resume();
+        }
+      };
+
+      const playTactileClick = (freq = 520) => {
+        if (!soundEnabled || !audioCtx) return;
+        try {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+          osc.frequency.exponentialRampToValueAtTime(140, audioCtx.currentTime + 0.05);
+
+          gain.gain.setValueAtTime(0.12, audioCtx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.05);
+
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+
+          osc.start();
+          osc.stop(audioCtx.currentTime + 0.05);
+        } catch (e) {
+          console.warn('Audio notice:', e);
+        }
+      };
+
+      const soundBtn = document.getElementById('sound-toggle');
+      if (soundBtn) {
+        soundBtn.addEventListener('click', () => {
+          initAudio();
+          soundEnabled = !soundEnabled;
+          if (soundEnabled) {
+            soundBtn.classList.add('sound-on');
+            soundBtn.innerHTML = `
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              </svg>
+              <span>Sound: ON</span>
+            `;
+            playTactileClick(680);
+          } else {
+            soundBtn.classList.remove('sound-on');
+            soundBtn.innerHTML = `
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <line x1="23" y1="9" x2="17" y2="15"></line>
+                <line x1="17" y1="9" x2="23" y2="15"></line>
+              </svg>
+              <span>Sound: OFF</span>
+            `;
+          }
+        });
+      }
+
+      // 2. Interactive Search and Category Filter
+      const searchInput = document.getElementById('ai-search-input');
+      const searchClear = document.getElementById('ai-search-clear');
+      const catBtns = document.querySelectorAll('.ai-cat-btn');
+      const allCards = Array.from(document.querySelectorAll('.ai-model-card'));
+      const sectionBlocks = document.querySelectorAll('.ai-category-section');
+      const countDisplay = document.getElementById('visible-models-count');
+      const noResults = document.getElementById('ai-no-results');
+      const resetSearchBtn = document.getElementById('reset-search-btn');
+
+      let currentCategory = 'all';
+      let currentQuery = '';
+
+      const applyFilters = () => {
+        let visibleCount = 0;
+        const normalizedQuery = currentQuery.toLowerCase().trim();
+
+        allCards.forEach(card => {
+          const cardCat = card.getAttribute('data-category');
+          const cardKeywords = (card.getAttribute('data-keywords') || '') + ' ' + card.innerText;
+          const matchesCategory = (currentCategory === 'all' || cardCat === currentCategory);
+          const matchesQuery = !normalizedQuery || cardKeywords.toLowerCase().includes(normalizedQuery);
+
+          if (matchesCategory && matchesQuery) {
+            card.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+
+        // Toggle category sections if they have no visible cards
+        sectionBlocks.forEach(sec => {
+          const secGroup = sec.getAttribute('data-category-group');
+          const hasVisibleInSec = sec.querySelectorAll('.ai-model-card:not(.hidden)').length > 0;
+          if (hasVisibleInSec) {
+            sec.style.display = 'block';
+          } else {
+            sec.style.display = 'none';
+          }
+        });
+
+        // Update counter & empty state
+        if (countDisplay) countDisplay.textContent = visibleCount;
+        if (noResults) {
+          if (visibleCount === 0) {
+            noResults.classList.add('show');
+          } else {
+            noResults.classList.remove('show');
+          }
+        }
+
+        if (searchClear) {
+          if (normalizedQuery.length > 0) {
+            searchClear.classList.add('show');
+          } else {
+            searchClear.classList.remove('show');
+          }
+        }
+      };
+
+      // Search input handler
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          currentQuery = e.target.value;
+          applyFilters();
+        });
+      }
+
+      if (searchClear) {
+        searchClear.addEventListener('click', () => {
+          playTactileClick(440);
+          searchInput.value = '';
+          currentQuery = '';
+          applyFilters();
+          searchInput.focus();
+        });
+      }
+
+      // Category buttons handler
+      catBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          playTactileClick(560);
+          catBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentCategory = btn.getAttribute('data-cat');
+          applyFilters();
+        });
+      });
+
+      if (resetSearchBtn) {
+        resetSearchBtn.addEventListener('click', () => {
+          playTactileClick(520);
+          searchInput.value = '';
+          currentQuery = '';
+          currentCategory = 'all';
+          catBtns.forEach(b => b.classList.remove('active'));
+          if (catBtns[0]) catBtns[0].classList.add('active');
+          applyFilters();
+        });
+      }
+
+      // 3. Quick Model Inquiry Modal
+      const modal = document.getElementById('ai-modal');
+      const modalClose = document.getElementById('ai-modal-close');
+      const modalTitle = document.getElementById('modal-model-title');
+      const modalTech = document.getElementById('modal-model-tech');
+      const modalWhatsApp = document.getElementById('modal-whatsapp-link');
+      const modalEmail = document.getElementById('modal-email-link');
+
+      document.querySelectorAll('.ai-inquire-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          playTactileClick(620);
+          const model = btn.getAttribute('data-model') || 'Custom AI Model';
+          const tech = btn.getAttribute('data-tech') || 'Computer Vision';
+
+          if (modalTitle) modalTitle.textContent = model;
+          if (modalTech) modalTech.textContent = 'Architecture: ' + tech;
+
+          const encodedMsg = encodeURIComponent(`Hi Satyam, I am interested in deploying your ${model} model (${tech}) for my business.`);
+          if (modalWhatsApp) {
+            modalWhatsApp.href = `https://wa.me/917021354835?text=${encodedMsg}`;
+          }
+          if (modalEmail) {
+            modalEmail.href = `mailto:contact@alphasonicsolution.com?subject=Model%20Inquiry%20-%20${encodeURIComponent(model)}&body=${encodedMsg}`;
+          }
+
+          if (modal) modal.classList.add('active');
+        });
+      });
+
+      if (modalClose && modal) {
+        modalClose.addEventListener('click', () => {
+          playTactileClick(420);
+          modal.classList.remove('active');
+        });
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) modal.classList.remove('active');
+        });
+      }
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
+          modal.classList.remove('active');
+        }
+      });
+    });
+  </script>
+  <!-- Global Scripts (Neural Canvas & Tactile Feedback) -->
+  <script src="script.js"></script>
+</body>
+</html>

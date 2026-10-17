@@ -454,6 +454,441 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // -------------------------------------------------------------
+  // 9B. TESTIMONIALS SLIDER & FILTERING (Neo-Tactile Engine)
+  // -------------------------------------------------------------
+  const track = document.getElementById('testimonials-track');
+  const prevBtn = document.getElementById('t-prev-btn');
+  const nextBtn = document.getElementById('t-next-btn');
+  const dotsContainer = document.getElementById('testimonials-dots');
+  const currentNumEl = document.getElementById('slider-current-num');
+  const totalNumEl = document.getElementById('slider-total-num');
+  const tFilterBtns = document.querySelectorAll('.t-filter-btn');
+  const allCards = Array.from(document.querySelectorAll('.testimonials-slider-track .testimonial-card'));
+
+  if (track && allCards.length) {
+    let visibleCards = [...allCards];
+    let currentIndex = 0;
+    let autoSlideInterval = null;
+
+    const formatNum = (n) => (n < 10 ? '0' + n : '' + n);
+
+    const updateDotsUI = () => {
+      if (!dotsContainer) return;
+      dotsContainer.innerHTML = '';
+      visibleCards.forEach((_, idx) => {
+        const dot = document.createElement('button');
+        dot.className = `t-dot ${idx === currentIndex ? 'active' : ''}`;
+        dot.setAttribute('aria-label', `Go to testimonial slide ${idx + 1}`);
+        dot.addEventListener('click', () => {
+          playTactileClick(520);
+          scrollToIndex(idx);
+        });
+        dotsContainer.appendChild(dot);
+      });
+      if (totalNumEl) totalNumEl.textContent = formatNum(visibleCards.length);
+      if (currentNumEl) currentNumEl.textContent = formatNum(currentIndex + 1);
+    };
+
+    const scrollToIndex = (idx) => {
+      if (!visibleCards.length) return;
+      currentIndex = Math.max(0, Math.min(idx, visibleCards.length - 1));
+      const targetCard = visibleCards[currentIndex];
+      if (targetCard) {
+        track.scrollTo({
+          left: targetCard.offsetLeft - track.offsetLeft,
+          behavior: 'smooth'
+        });
+      }
+      if (currentNumEl) currentNumEl.textContent = formatNum(currentIndex + 1);
+      const dots = dotsContainer ? dotsContainer.querySelectorAll('.t-dot') : [];
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentIndex);
+      });
+    };
+
+    // Next & Prev click handlers
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        playTactileClick(620);
+        let nextIdx = currentIndex + 1;
+        if (nextIdx >= visibleCards.length) nextIdx = 0;
+        scrollToIndex(nextIdx);
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        playTactileClick(480);
+        let prevIdx = currentIndex - 1;
+        if (prevIdx < 0) prevIdx = visibleCards.length - 1;
+        scrollToIndex(prevIdx);
+      });
+    }
+
+    // Scroll listener to update active index when user swipes or drags
+    let scrollTimeout = null;
+    track.addEventListener('scroll', () => {
+      if (scrollTimeout) clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        const scrollLeft = track.scrollLeft;
+        let closestIdx = 0;
+        let minDiff = Infinity;
+        visibleCards.forEach((card, idx) => {
+          const diff = Math.abs((card.offsetLeft - track.offsetLeft) - scrollLeft);
+          if (diff < minDiff) {
+            minDiff = diff;
+            closestIdx = idx;
+          }
+        });
+        currentIndex = closestIdx;
+        if (currentNumEl) currentNumEl.textContent = formatNum(currentIndex + 1);
+        const dots = dotsContainer ? dotsContainer.querySelectorAll('.t-dot') : [];
+        dots.forEach((dot, i) => {
+          dot.classList.toggle('active', i === currentIndex);
+        });
+      }, 60);
+    });
+
+    // Autoplay Timer (Every 5.5s, pauses on hover)
+    const startAutoSlide = () => {
+      stopAutoSlide();
+      autoSlideInterval = setInterval(() => {
+        let nextIdx = currentIndex + 1;
+        if (nextIdx >= visibleCards.length) nextIdx = 0;
+        scrollToIndex(nextIdx);
+      }, 5500);
+    };
+
+    const stopAutoSlide = () => {
+      if (autoSlideInterval) {
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = null;
+      }
+    };
+
+    track.addEventListener('mouseenter', stopAutoSlide);
+    track.addEventListener('mouseleave', startAutoSlide);
+    track.addEventListener('touchstart', stopAutoSlide, { passive: true });
+
+    // Category Filter Buttons
+    if (tFilterBtns.length) {
+      tFilterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          playTactileClick(560);
+          tFilterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filter = btn.getAttribute('data-t-filter');
+          allCards.forEach(card => {
+            const category = card.getAttribute('data-category');
+            if (filter === 'all' || category === filter) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+
+          visibleCards = allCards.filter(card => card.style.display !== 'none');
+          currentIndex = 0;
+          updateDotsUI();
+          scrollToIndex(0);
+        });
+      });
+    }
+
+    // Initialize UI
+    updateDotsUI();
+    startAutoSlide();
+  }
+
+  // -------------------------------------------------------------
+  // 9C. AI NEURAL CANVAS & COMPUTER VISION HUD ANIMATION
+  // Applicable across Whole Website (All .ai-neural-canvas instances)
+  // -------------------------------------------------------------
+  const aiCanvases = document.querySelectorAll('.ai-neural-canvas');
+  if (aiCanvases.length > 0) {
+    aiCanvases.forEach((aiCanvas) => {
+      const ctx = aiCanvas.getContext('2d');
+      let width = 0;
+      let height = 0;
+      let animationFrameId = null;
+      let isVisible = false;
+
+      const nodeCount = 58;
+      const nodes = [];
+      const impulses = []; // Synaptic action potentials (firing electrical pulses)
+      const colors = [
+        'rgba(124, 58, 237, ', // purple
+        'rgba(6, 182, 212, ',  // cyan
+        'rgba(37, 99, 235, ',  // blue
+        'rgba(16, 185, 129, '  // emerald
+      ];
+
+      const mouse = { x: null, y: null, maxDist: 175 };
+      let scanlineY = 0;
+
+      const resizeCanvas = () => {
+        const parent = aiCanvas.parentElement;
+        if (!parent) return;
+        const rect = parent.getBoundingClientRect();
+        width = rect.width;
+        height = rect.height;
+
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        aiCanvas.width = width * dpr;
+        aiCanvas.height = height * dpr;
+        ctx.scale(dpr, dpr);
+      };
+
+      const initNodes = () => {
+        nodes.length = 0;
+        impulses.length = 0;
+        for (let i = 0; i < nodeCount; i++) {
+          nodes.push({
+            x: Math.random() * (width || 1200),
+            y: Math.random() * (height || 600),
+            vx: (Math.random() - 0.5) * 0.7,
+            vy: (Math.random() - 0.5) * 0.7,
+            radius: Math.random() * 2.4 + 1.2,
+            color: colors[Math.floor(Math.random() * colors.length)],
+            pulse: Math.random() * Math.PI * 2,
+            pulseSpeed: 0.02 + Math.random() * 0.03,
+            bloom: 0 // extra glow when hit by impulse
+          });
+        }
+      };
+
+      const spawnImpulse = () => {
+        if (nodes.length < 2 || impulses.length > 18) return;
+        // Find a connected pair
+        const fromIdx = Math.floor(Math.random() * nodes.length);
+        const fromNode = nodes[fromIdx];
+        const maxDist = 145;
+
+        for (let j = 0; j < nodes.length; j++) {
+          if (j === fromIdx) continue;
+          const toNode = nodes[j];
+          const dx = toNode.x - fromNode.x;
+          const dy = toNode.y - fromNode.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+
+          if (dist < maxDist && dist > 30) {
+            impulses.push({
+              from: fromNode,
+              to: toNode,
+              progress: 0,
+              speed: 0.022 + Math.random() * 0.024,
+              color: Math.random() > 0.4 ? 'rgba(6, 182, 212, ' : 'rgba(124, 58, 237, '
+            });
+            break;
+          }
+        }
+      };
+
+      const drawFrame = () => {
+        if (!isVisible) return;
+        ctx.clearRect(0, 0, width, height);
+
+        // Update virtual scanline
+        scanlineY += 1.4;
+        if (scanlineY > height + 60) scanlineY = -30;
+
+        // Draw connections between nodes
+        const maxConnectDist = 135;
+        for (let i = 0; i < nodes.length; i++) {
+          for (let j = i + 1; j < nodes.length; j++) {
+            const dx = nodes[i].x - nodes[j].x;
+            const dy = nodes[i].y - nodes[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+
+            if (dist < maxConnectDist) {
+              const alpha = (1 - dist / maxConnectDist) * 0.24;
+              ctx.beginPath();
+              ctx.strokeStyle = `rgba(124, 58, 237, ${alpha})`;
+              ctx.lineWidth = 0.9;
+              ctx.moveTo(nodes[i].x, nodes[i].y);
+              ctx.lineTo(nodes[j].x, nodes[j].y);
+              ctx.stroke();
+            }
+          }
+
+          // Connections to mouse cursor (Active Neural Probe)
+          if (mouse.x !== null && mouse.y !== null) {
+            const mdx = nodes[i].x - mouse.x;
+            const mdy = nodes[i].y - mouse.y;
+            const mdist = Math.sqrt(mdx * mdx + mdy * mdy);
+            if (mdist < mouse.maxDist) {
+              const mAlpha = (1 - mdist / mouse.maxDist) * 0.55;
+              ctx.beginPath();
+              ctx.strokeStyle = `rgba(6, 182, 212, ${mAlpha})`;
+              ctx.lineWidth = 1.3;
+              ctx.moveTo(nodes[i].x, nodes[i].y);
+              ctx.lineTo(mouse.x, mouse.y);
+              ctx.stroke();
+            }
+          }
+        }
+
+        // Spawn periodic synaptic electrical impulses
+        if (Math.random() < 0.28) {
+          spawnImpulse();
+        }
+
+        // Draw and advance traveling impulses (Action Potentials)
+        for (let k = impulses.length - 1; k >= 0; k--) {
+          const imp = impulses[k];
+          imp.progress += imp.speed;
+
+          if (imp.progress >= 1) {
+            imp.to.bloom = 1.0;
+            impulses.splice(k, 1);
+            continue;
+          }
+
+          const curX = imp.from.x + (imp.to.x - imp.from.x) * imp.progress;
+          const curY = imp.from.y + (imp.to.y - imp.from.y) * imp.progress;
+
+          // Electric core
+          ctx.beginPath();
+          ctx.arc(curX, curY, 2.6, 0, Math.PI * 2);
+          ctx.fillStyle = imp.color + '0.98)';
+          ctx.fill();
+
+          // Outer plasma halo
+          ctx.beginPath();
+          ctx.arc(curX, curY, 6.5, 0, Math.PI * 2);
+          ctx.fillStyle = imp.color + '0.28)';
+          ctx.fill();
+        }
+
+        // Draw nodes and update physics
+        for (let i = 0; i < nodes.length; i++) {
+          const node = nodes[i];
+          node.pulse += node.pulseSpeed;
+
+          // Check scanline intersection (LIDAR highlight)
+          const nearScan = Math.abs(node.y - scanlineY) < 18;
+          if (nearScan) {
+            node.bloom = Math.max(node.bloom, 0.7);
+          }
+
+          const currentRadius = node.radius + Math.sin(node.pulse) * 0.6 + node.bloom * 1.8;
+
+          // Outer synaptic glow
+          ctx.beginPath();
+          ctx.arc(node.x, node.y, currentRadius * 2.8, 0, Math.PI * 2);
+          ctx.fillStyle = node.color + (0.06 + node.bloom * 0.25) + ')';
+          ctx.fill();
+
+          // Core node
+          ctx.beginPath();
+          ctx.arc(node.x, node.y, currentRadius, 0, Math.PI * 2);
+          ctx.fillStyle = node.color + (0.85 + node.bloom * 0.15) + ')';
+          ctx.fill();
+
+          // Decay bloom
+          if (node.bloom > 0.02) {
+            node.bloom *= 0.91;
+          } else {
+            node.bloom = 0;
+          }
+
+          // Gentle movement
+          node.x += node.vx;
+          node.y += node.vy;
+
+          if (node.x < 0 || node.x > width) node.vx *= -1;
+          if (node.y < 0 || node.y > height) node.vy *= -1;
+        }
+
+        // Draw Computer Vision HUD Targeting Reticle around cursor
+        if (mouse.x !== null && mouse.y !== null) {
+          ctx.save();
+          ctx.strokeStyle = 'rgba(6, 182, 212, 0.65)';
+          ctx.lineWidth = 1.2;
+
+          // Outer reticle circle
+          ctx.beginPath();
+          ctx.arc(mouse.x, mouse.y, 22, 0, Math.PI * 2);
+          ctx.stroke();
+
+          // Inner dot
+          ctx.beginPath();
+          ctx.arc(mouse.x, mouse.y, 2.5, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(124, 58, 237, 0.9)';
+          ctx.fill();
+
+          // Crosshairs
+          ctx.beginPath();
+          ctx.moveTo(mouse.x - 30, mouse.y); ctx.lineTo(mouse.x - 14, mouse.y);
+          ctx.moveTo(mouse.x + 14, mouse.y); ctx.lineTo(mouse.x + 30, mouse.y);
+          ctx.moveTo(mouse.x, mouse.y - 30); ctx.lineTo(mouse.x, mouse.y - 14);
+          ctx.moveTo(mouse.x, mouse.y + 14); ctx.lineTo(mouse.x, mouse.y + 30);
+          ctx.stroke();
+
+          // Live CV telemetry coordinate text
+          ctx.font = '700 9px "JetBrains Mono", monospace';
+          ctx.fillStyle = 'rgba(15, 23, 42, 0.7)';
+          ctx.fillText(`CV:TARGET [${Math.round(mouse.x)}, ${Math.round(mouse.y)}]`, mouse.x + 18, mouse.y - 14);
+          ctx.fillStyle = 'rgba(5, 150, 105, 0.85)';
+          ctx.fillText(`TRACKING: 99.4%`, mouse.x + 18, mouse.y - 4);
+          ctx.restore();
+        }
+
+        animationFrameId = requestAnimationFrame(drawFrame);
+      };
+
+      const parentSection = aiCanvas.parentElement;
+      if (parentSection) {
+        parentSection.addEventListener('mousemove', (e) => {
+          const rect = parentSection.getBoundingClientRect();
+          mouse.x = e.clientX - rect.left;
+          mouse.y = e.clientY - rect.top;
+        });
+
+        parentSection.addEventListener('mouseleave', () => {
+          mouse.x = null;
+          mouse.y = null;
+        });
+      }
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            isVisible = true;
+            if (!animationFrameId) drawFrame();
+          } else {
+            isVisible = false;
+            if (animationFrameId) {
+              cancelAnimationFrame(animationFrameId);
+              animationFrameId = null;
+            }
+          }
+        });
+      }, { threshold: 0.05 });
+
+      observer.observe(parentSection || aiCanvas);
+
+      window.addEventListener('resize', () => {
+        resizeCanvas();
+        initNodes();
+      });
+
+      resizeCanvas();
+      initNodes();
+    });
+
+    // Dynamic Live Inference Latency Counter Simulator (13.8ms ~ 15.2ms)
+    setInterval(() => {
+      const latencyEls = document.querySelectorAll('.ai-live-latency');
+      const val = (13.6 + Math.random() * 1.6).toFixed(1) + 'ms';
+      latencyEls.forEach(el => {
+        el.textContent = val;
+      });
+    }, 2200);
+  }
+
+  // -------------------------------------------------------------
   // 10. FORM SUBMISSION VIA PHP SCRIPT
   // -------------------------------------------------------------
   const form = document.getElementById('advisory-intake');
